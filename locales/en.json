@@ -1,0 +1,282 @@
+{
+  "author" : "Eric Raby",
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "interventions": "Interventions",
+    "experiences": "Experiences",
+    "contacts": "Contacts"
+  },
+  "hero_section": {
+    "title": "COACHING BY ÉRIC RABY ",
+    "subtitle": "",
+    "b_title": "GET STARTED"
+  },
+  "vertical_tags_section": {
+    "comments": [
+      {
+        "author": "",
+        "text": "Thanks to what he learned in team sports like basketball, such as discipline, stress management, and how to set goals, Éric compassionately supports young people by truly listening to them. He uses a method that places the person at the center (called PCP), allowing everyone to express themselves freely and progress at their own pace."
+      },
+      {
+        "author": "",
+        "text": "He also works with athletes or teams to help them perform while taking care of their personal balance. Whether for a teen, an athlete, or a group, Éric offers tailored support to help everyone grow, progress, and feel good about what they do."
+      },
+      {
+        "author": "Éric Raby – Coach for Teens and Families",
+        "text": "Éric RABY is a former high-level athlete who played basketball and decided to put his experience at the service of young people and their families. He helps teens regain confidence, better understand themselves, and find motivation, especially during times of doubt or questioning."
+      }
+    ]
+  },
+  "aboutme_section": {
+    "title" : "Who am I ?",
+    "subtitle" : "Éric Raby: coach and mentor dedicated to adolescents and their families.",
+    "text" : {
+        "1" : "I inspire everyone to reach their goals while cultivating well-being and personal harmony.",
+        "2" : "A former high-level athlete who played basketball, Éric Raby has acquired key skills such as discipline, motivation, rigor, performance management, and leadership. These qualities, forged on the basketball courts, have shaped his approach to supporting children and parents in achieving their projects (academic, sports, professional).",
+        "3" : "Specializing in impact and kindness, Éric has focused on supporting adolescents, a period often marked by doubts, questions, and a lack of motivation. Through the PCP method (Person-Centered Approach), he creates a safe space where each young person can express their needs and work on their goals. His role is to help adolescents reconnect with their potential, overcome obstacles, and strengthen their self-confidence. Through this personalized approach, he guides them to become aware of their strengths and aspirations, in order to find a clear path towards the future. This awareness includes parents in the success of their children.",
+        "4" : "A telling example: Ines, a teenager struggling academically, was able to rediscover her passions and positively redirect her goals. She was supported to overcome her blocks, regain motivation, and embark on a more fulfilling path.",
+        "5" : "In addition to his expertise in personal development, Éric holds a diploma in sports team management registered with the DRAJES (Regional Directorate of Youth, Sports, and Social Cohesion). This certification issued by the CPNEF (National Joint Employment Training Commission) allows him to work with athletes and teams to achieve their goals while preserving their well-being and balance."
+    }
+  },
+  "about_action1_section": {
+    "title" : "My Intervention in Schools",
+    "subtitle" : "**Fostering the personal and social development of students**",
+    "text" : [
+      {
+        "pic_url" : "/team.jpg",
+        "title" : "Are you experiencing situations like these? Let's talk about it.",
+        "text" : "Everyone goes through moments when everything seems more complicated. Whether you're a teen, parent, or young adult, there are times when you may feel stuck, misunderstood, or overwhelmed. Here are some situations I often encounter and on which I can help you, step by step."
+      },
+      {
+        "pic_url" : "/difficult-alone.jpg",
+        "title" : "Difficulties in communication",
+        "text" : "Do you struggle to say what you think or feel? Do you feel afraid to speak, assert yourself, or simply express yourself? These blocks can hinder your development, whether at school, at home, or in your projects. Together, we work to help you find your voice and assert your ideas calmly and confidently."
+      },
+      {
+        "pic_url" : "/isolment-social.jpg",
+        "title" : "Social isolation",
+        "text" : "Do you feel alone or struggle to make connections? It's not always easy to make friends or build healthy relationships. I help you gradually open up to others, better understand human relationships, and create genuine and lasting bonds."
+      },
+      {
+        "pic_url" : "/anxiety.jpg",
+        "title" : "Anxiety in social situations",
+        "text" : "Speaking in public or simply meeting new people can stress or even frighten you. This discomfort is not inevitable. Together, we learn to tame this fear, build your confidence, and feel more at ease in interactions."
+      },
+      {
+        "pic_url" : "/difficult-b.jpg",
+        "title" : "Difficulty setting boundaries",
+        "text" : "Do you often say 'yes' when you want to say 'no'? Do you struggle to assert yourself, set clear boundaries, or express your needs? We work together so you can respect yourself, be respected, and feel freer in your choices."
+      },
+      {
+        "pic_url" : "/emotion-illustrate.jpg",
+        "title" : "Managing your emotions",
+        "text" : "Do you sometimes react too strongly or not know what’s going on inside you? Understanding your emotions and knowing how to manage them is a real strength. I support you in learning to recognize what you feel, express it without exploding, and better manage your reactions."
+      }
+    ]
+  },
+  "about_action2_section": {
+    "title" : "My Support for Adults",
+    "subtitle" : "My support for adults focuses on listening and personalized assistance. I help everyone overcome their challenges and achieve their goals. Together, we build a path towards fulfillment and success.",
+    "text" : [
+      {
+        "title" : "Do you feel that something is holding you back?",
+        "text" : "There comes a time when we realize that despite all our efforts... something is stuck. Thoughts that go in circles, projects that we postpone, a feeling of not moving forward. If you recognize yourself in any of these points, know that you are not alone and that it can change."
+      },
+      {
+        "title" : "You constantly postpone what matters",
+        "text" : "Do you have projects, desires, but always put them off? Procrastination is not laziness; it’s often a mix of fear, pressure, and confusion. We learn to set priorities, break tasks down, and gradually take back control of your life."
+      },
+      {
+        "title" : "It’s time to take back control of your journey",
+        "text" : "You don’t have to wait for a 'burnout' or a crisis to ask for help. Taking care of yourself is already a victory. And that’s where change begins."
+      },
+      {
+        "title" : "Constant self-criticism",
+        "text" : "This little voice in your head that won’t let go, reminding you of your mistakes and making you doubt yourself… It can become a real hindrance in everyday life. Together, we work to silence it (or at least calm it), so you can move forward with more kindness towards yourself."
+      },
+      {
+        "title" : "The fear of failing",
+        "text" : "Do you struggle to take the first step? To dare to start a project, make a decision, or simply try? The fear of failure is often linked to the fear of others' opinions… or your own. I help you transform this fear into a driving force to move forward, step by step."
+      },
+      {
+        "title" : "Do you feel that something is holding you back?",
+        "text" : "There comes a time when we realize that despite all our efforts... something is stuck. Thoughts that go in circles, projects that we postpone, a feeling of not moving forward. If you recognize yourself in any of these points, know that you are not alone and that it can change."
+      }
+    ]
+  },
+  "about_guidance_section": {
+    "title" : "My Guidance in Sports Associations",
+    "subtitle" : "Guiding young people towards sporting excellence... and personal growth",
+    "subtitle_1" :"Performance is not built solely on the field. Behind every athlete, there is a mindset to strengthen, motivation to maintain, and confidence to develop.That’s why I support young athletes aged 13 to 19 in clubs and sports associations, with an approach centered on mental strength and personal balance.",
+    "text" : {
+      "1" : {
+        "title" : "Mental Strength, the Key to Performance",
+        "pic_url" : "",
+        "text" : {
+          "1" : "What I offer:",
+          "2" : "✔️ Develop self-confidence and motivation",
+          "3" : "✔️ Learn to manage pressure, emotions, and the stress of competition",
+          "4" : "✔️ Come back stronger after an injury, both physically and mentally",
+          "5" : "✔️ Find a balance between sporting goals and personal well-being",
+          "6" : " Individual coaching or in small groups, in collaboration with coaches and families"
+        }
+      },
+      "2" : {
+        "title" : "Mental Coaching for Motivated Young Athletes",
+        "pic_url" : "",
+        "text" : {
+          "1" : "“Preparing the body is good. Preparing the mind is crucial.”",
+          "2" : "Whether it’s about returning after an injury, overcoming a dip in motivation, or preparing for an important event, I offer concrete tools tailored to the age and reality of each young athlete."
+        }
+      },
+      "3" : {
+        "title" : "In Collaboration with Clubs and Coaches",
+        "pic_url" : "",
+        "text" : {
+            "1" : "My support is in collaboration with coaches and supervisors: I do not replace, I complement. Together, we build a framework that allows the young person to progress as an athlete... and as a person. ",
+            "2" : "Are you an association or a sports club? Let's discuss a program tailored to your needs.",
+            "3" : "Contact me for an intervention in the club"
+        }
+      }
+    }
+  },
+  "about_method_section": {
+    "title" : "My Well-Being Method...",
+    "subtitle" : "Mental & Physical Balance: A Holistic Approach for Sustainable Performance",
+    "subtitle_1" : "Behind every performance, there is a mindset… and a well-prepared body. The pressure to succeed, the stress of competitions, injuries, and mental fatigue… all of this can hinder a young athlete, an active adult, or anyone seeking well-being. When the mind falters, the body follows. And the reverse is equally true.",
+    "b_title" : "Start here!",
+    "right_section" : {
+      "title" : "A Complete, Personalized Well-Being Approach",
+      "text" : {
+        "1" : "I offer a holistic method that combines mental support and nutritional guidance to help you:",
+        "2" : "- Regain your energy and motivation",
+        "3" : "- Improve your concentration and recovery",
+        "4" : "- Manage pressure and stress with more serenity"
+      }
+    },
+    "left_section" : {
+      "title" : "100% Natural Dietary Supplements",
+      "text" : {
+        "1" : "Derived from organic farming, these supplements are rich in omega fatty acids and polyphenols, two essential nutrients for the proper functioning of the brain and the balance of fatty acids in the body.",
+        "2" : "- Better recovery after effort",
+        "3" : "- Natural stress management",
+        "4" : "- Support for concentration and the nervous system",
+        "5" : "This is not a “miracle product”, but intelligent support in a global approach"
+      }
+    }
+  },
+  "about_guide_section": {
+    "title" : "My Book LE QWAM: A Mental Guide to Regain Control",
+    "right_section" : {
+      "text" : {
+        "1" : "Because it’s not enough to nourish the body, you also need to train the mind. My digital guide accompanies you through:",
+        "2" : "• Practical advice to strengthen your mindset",
+        "3" : "• Tips for better managing pressure",
+        "4" : "• Concrete exercises to develop resilience and mental clarity",
+        "5" : "A real toolbox for athletes, students, parents, or anyone seeking balance.",
+        "6" : "📥 [Download the digital guide] – Paid version with advice & exercise pages"
+      }
+    },
+    "left_section" : {
+      "text" : {
+        "1" : "✔️ Des conseils pratiques pour renforcer votre mental",
+        "2" : "✔️ Des astuces pour mieux gérer la pression",
+        "3" : "Des exercices concrets pour développer la résilience et la clarté mentale",
+        "4" : "Une vraie boîte à outils pour les sportifs, les étudiants, les parents ou toute personne en quête d'équilibre.",
+        "b_title" : "Buy Your Book Now"
+      }
+    }
+  },
+  "client_feedback_section": {
+    "title" : "They say it better than I do...",
+    "subtitle" : "What those I have accompanied say",
+    "user" : [
+      {
+        "name" : "Marie",
+        "age" : "",
+        "job" : "Mother of a teen",
+        "pic_url" : "/girl-icon.jpg",
+        "comment" : "My son was withdrawn, doubting everything. In a few weeks, we saw a real change. Thank you for your listening and kindness."
+      },
+      {
+        "name" : "Nicolas",
+        "age" : "",
+        "job" : "Sports coach",
+        "pic_url" : "/boy-icon-2.jpg",
+        "comment" : "Éric's intervention in our club made a real difference. The young people are more engaged, calmer, and more open. Working on the mind is essential today."
+      },
+      {
+        "name" : "Lucas",
+        "age" : "17 years old",
+        "job" : "– young athlete",
+        "pic_url" : "/boy-icon.jpg",
+        "comment" : "Thanks to Éric's support, I regained my motivation. I learned to better manage my stress before competitions and focus on what I can control."
+      },{
+        "name" : "Marie",
+        "age" : "",
+        "job" : "Mother of a teen",
+        "pic_url" : "/girl-icon.jpg",
+        "comment" : "My son was withdrawn, doubting everything. In a few weeks, we saw a real change. Thank you for your listening and kindness."
+      },
+      {
+        "name" : "Nicolas",
+        "age" : "",
+        "job" : "Sports coach",
+        "pic_url" : "/boy-icon-2.jpg",
+        "comment" : "Éric's intervention in our club made a real difference. The young people are more engaged, calmer, and more open. Working on the mind is essential today."
+      },
+      {
+        "name" : "Lucas",
+        "age" : "17 years old",
+        "job" : "Young athlete",
+        "pic_url" : "/boy-icon.jpg",
+        "comment" : "Thanks to Éric's support, I regained my motivation. I learned to better manage my stress before competitions and focus on what I can control."
+      }
+    ]
+  },
+  "blog_answer_section": {
+    "title" : "BLOG",
+    "subtitle" :  "No question goes unanswered...",
+    "1" : {
+      "question" : "Why working on your mindset changes everything (even outside of sports)?" ,
+      "reponse" : "What high-level athletes teach us about resilience, focus, and motivation."
+    },
+    "2" : {
+      "question" : "“I can’t say what I think” – Understanding the communication block" ,
+      "reponse" : "Why we struggle to express ourselves… and how to free ourselves from it."
+    },
+    "3" : {
+      "question" : "Procrastination is not laziness (and how to overcome it)" ,
+      "reponse" : "Concrete strategies to finally take action."
+    },
+    "4" : {
+      "question" : "How to recover well after an injury (mentally and physically)" ,
+      "reponse" : "The mistake that 80% of young athletes make… and how to prepare differently."
+    },
+    "5" : {
+      "question" : "Nutrition and mental well-being: the forgotten role of omega fatty acids and polyphenols " ,
+      "reponse" : "Why eating well also supports your brain and mood."
+    },
+    "6" : {
+      "question" : "Teens & social relationships: how to help a young person out of isolation" ,
+      "reponse" : "Concrete tools for parents, educators, and coaches."
+    }
+  },
+  "contact_section": {
+    "title" : "Personalized support in just a few clicks",
+    "subtitle" : "Contact me...",
+    "name_placeholder" : "Your name here",
+    "email_placeholder" : "Your email here",
+    "message_placeholder" : "Your message here",
+    "b_submit" : "SEND MESSAGE"
+  },
+  "footer_section": {
+     "home": "Home",
+    "about": "About",
+    "interventions": "Interventions",
+    "experiences": "Experiences",
+    "contact": "Contacts",
+    "faq": "FAQ"
+  }
+}

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+
+    /* Custom theme colors */
+    --color-primary: #717171;
+    --color-secondary: #F4F0F0;
+    --color-accent: #A28956;
+    --color-background: #f5f5f5;
+    --color-text: #333333;
+
+    --text-accent: #717171;
+    
+    /* Custom font sizes */
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-large: 1.25rem; /* 20px */
+    --font-size-xlarge: 1.5rem; /* 24px */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #A28956; /* or use Tailwind overrides */
+  padding : 15px 15px;
+}

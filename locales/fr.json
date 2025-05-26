@@ -1,0 +1,283 @@
+{
+    "author" : "Eric Raby",
+    "header": {
+        "home": "Accueil",
+        "about": "A propos",
+        "interventions": "Interventions",
+        "experiences": "Experiences",
+        "contacts": "Contacts"
+    },
+  "hero_section": {
+    "title": "COACHING PAR ÉRIC RABY ",
+    "subtitle": "",
+    "b_title": "COMMENCER"
+  },
+  "vertical_tags_section": {
+    "comments": [
+      {
+        "author": "",
+        "text": "Grâce à ce qu’il a appris dans le sport d’équipe comme le basket ball la discipline, la gestion du stress, ou comment se fixer des objectifs. Éric accompagne les jeunes avec bienveillance, en les écoutant vraiment. Il utilise une méthode qui met la personne au centre (appelée ACP), pour que chacun puisse s’exprimer librement et avancer à son rythme."
+      },
+      {
+        "author": "",
+        "text": "Il travaille aussi avec des sportifs ou des équipes pour les aider à performer, tout en prenant soin de leur équilibre personnel. Que ce soit pour un ado, un athlète ou un groupe, Éric propose un accompagnement sur mesure, pour aider chacun à grandir, progresser et se sentir bien dans ce qu’il fait."
+      },
+      {
+        "author": "Éric Raby – Coach pour ados et familles",
+        "text": "Éric RABY, c’est un ancien sportif de haut niveau qui a évolué dans le basket ball qui a décidé de mettre son expérience au service des jeunes et de leurs familles. Il aide les ados à retrouver confiance en eux, à mieux se connaître et à se motiver, surtout quand ils traversent des périodes de doute ou de remise en question."
+      }
+    ]
+  },
+  "aboutme_section": {
+    "title" : "Qui suis-je ?",
+    "subtitle" : "Éric Raby : coach et mentor au service des adolescents et de leurs familles.",
+    "text" : {
+        "1" : "J'inspire chacun à atteindre ses objectifs tout en cultivant bien-être et harmonie personnelle.",
+        "2" : "Ancien sportif de haut niveau ayant evoluer dans le Basket Ball Éric Raby a acquis des compétences clés telles que la discipline, motivation, rigueur, la gestion de la performance, du leadership. Ces qualités, forgées sur les terrains de basketball, ont nourri son approche pour accompagner enfants et parents dans la réussite de leurs projets (scolaires, sportifs, professionnels).",
+        "3" : "Spécialiste en impact et bienveillance, Éric s’est orienté vers l’accompagnement des adolescents, une période souvent marquée par des doutes, des interrogations et un manque de motivation. À travers la méthode ACP (Approche Centrée sur la Personne), il crée un cadre sécurisant où chaque jeune peut exprimer ses besoins et travailler sur ses objectifs. Son rôle est d’aider les adolescents à se reconnecter à leur potentiel, à surmonter les obstacles et à renforcer leur confiance en eux. Grâce à cette approche personnalisée, il les guide pour qu’ils prennent conscience de leurs forces et de leurs aspirations, afin de trouver un chemin clair vers l’avenir. Une prise de conscience qui inclut les parents dans la réussite de leurs enfants.",
+        "4" : "Un exemple parlant : Ines, une adolescente en difficulté scolaire a pu redécouvrir ses passions et réorienter ses objectifs de manière positive. Elle a été suivie pour surmonter ses blocages, retrouver la motivation et de se lancer sur une trajectoire plus épanouissante.",
+        "5" : "En complément de son expertise en développement personnel, Éric est diplômé en gestion d’équipes sportives immatriculée par la DRAJES (Direction Régionale de la Jeunesse, des Sports et de la Cohésion Sociale). Cette certification délivrée par la CPNEF (Commission paritaire nationale emploi formation) lui permet d’intervenir auprès d’athlètes et d’équipes pour atteindre leurs objectifs tout en préservant leur bien-être et leur équilibre."
+    }
+  },
+  "about_action1_section": {
+    "title" : "Mon intervention en milieu scolaire",
+    "subtitle" : "**Favoriser l'épanouissement personnel et social des élèves**",
+    "text" : [
+      {
+        "pic_url" : "/team.jpg",
+        "title" : "Tu vis des situations comme celles-ci ? Parlons-en.",
+        "text" : "Chacun traverse des moments où tout semble plus compliqué. Que tu sois ado, parent ou jeune adulte, il arrive parfois de se sentir bloqué, incompris ou dépassé. Voici quelques situations que je rencontre souvent et sur lesquelles je peux t’aider, pas à pas."
+      },
+      {
+        "pic_url" : "/difficult-alone.jpg",
+        "title" : "Difficultés à communiquer",
+        "text" : "Tu as du mal à dire ce que tu penses ou ce que tu ressens ? Tu ressens une peur de parler, de t’affirmer ou simplement de t’exprimer ? Ces blocages peuvent freiner ton épanouissement, que ce soit à l’école, à la maison ou dans tes projets. Ensemble, on travaille pour que tu retrouves ta voix et que tu puisses affirmer tes idées avec calme et confiance."
+      },
+      {
+        "pic_url" : "/isolment-social.jpg",
+        "title" : "Isolement social",
+        "text" : "Tu te sens seule ou tu as du mal à créer des liens ? Il n’est pas toujours facile de se faire des amis ou de construire des relations saines. Je t’aide à t’ouvrir progressivement aux autres, à mieux comprendre les relations humaines et à créer des liens vrais et durables."
+      },
+      {
+        "pic_url" : "/anxiety.jpg",
+        "title" : "Anxiété dans les situations sociales",
+        "text" : "Prendre la parole en public ou simplement rencontrer de nouvelles personnes peut te stresser, voire t’angoisser. Ce malaise n’est pas une fatalité. Ensemble, on apprend à apprivoiser cette peur, à construire ta confiance et à te sentir plus à l’aise dans les échanges."
+      },
+      {
+        "pic_url" : "/difficult-b.jpg",
+        "title" : "Difficultés à poser des limites",
+        "text" : "Tu dis souvent 'oui' alors que tu voudrais dire 'non' ? Tu as du mal à t’affirmer, à poser des limites claires ou à exprimer tes besoins ? On travaille ensemble pour que tu puisses te respecter, te faire respecter et te sentir plus libre dans tes choix."
+      },
+      {
+        "pic_url" : "/emotion-illustrate.jpg",
+        "title" : "Gérer ses émotions",
+        "text" : "Il t’arrive de réagir trop fort ou de ne pas savoir ce qui se passe en toi ? Comprendre ses émotions et savoir comment les gérer, c’est une vraie force. Je t’accompagne pour apprendre à reconnaître ce que tu ressens, à l’exprimer sans exploser, et à mieux gérer tes réactions."
+      }
+    ]
+  },
+  "about_action2_section": {
+    "title" : "Mon accompagnement pour adulte",
+    "subtitle" : "Mon accompagnement pour adultes se concentre sur l'écoute et le soutien personnalisé. J'aide chacun à surmonter ses défis et à atteindre ses objectifs. Ensemble, nous construisons un chemin vers l'épanouissement et la réussite.",
+    "text" : [
+      {
+        "title" : "Vous sentez que quelque chose vous freine ?",
+        "text" : "Il arrive un moment où l’on réalise que malgré tous nos efforts… quelque chose coince. Des pensées qui tournent en boucle, des projets qu’on repousse, une impression de ne pas avancer. Si vous vous reconnaissez dans l’un de ces points, sachez que vous n’êtes pas seul (e)  et que ça peut changer."
+      },
+      {
+        "title" : "Des relations compliquées",
+        "text" : "Vous cherchez souvent à plaire, à être validé.e par les autres ? Cette quête d’approbation peut nuire à votre équilibre, tant dans votre vie personnelle que professionnelle. On travaille ensemble sur l’estime de soi, pour que vous puissiez construire des relations plus saines et plus équilibrées."
+      },
+      {
+        "title" : "Il est temps de redevenir acteur de votre parcours",
+        "text" : "Vous n’avez pas besoin d’attendre un 'burn-out' ou une crise pour demander de l’aide. Prendre soin de vous, c’est déjà une victoire. Et c’est là que commence le changement."
+      },
+      {
+        "title" : "Une autocritique permanente",
+        "text" : "Cette petite voix dans votre tête qui ne vous lâche pas, qui vous rappelle vos erreurs et vous fait douter de vous… Elle peut devenir un vrai frein au quotidien. Ensemble, on travaille à la faire taire (ou au moins, la calmer), pour que vous puissiez avancer avec plus de bienveillance envers vous-même."
+      },
+      {
+        "title" : "La peur d’échouer",
+        "text" : "Vous avez du mal à faire le premier pas ? À oser lancer un projet, prendre une décision, ou simplement essayer ? La peur de l’échec est souvent liée à la peur du regard des autres… ou de soi-même. Je vous aide à transformer cette peur en moteur pour avancer, pas à pas."
+      },
+      {
+        "title" : "Vous sentez que quelque chose vous freine ?",
+        "text" : "Il arrive un moment où l’on réalise que malgré tous nos efforts… quelque chose coince. Des pensées qui tournent en boucle, des projets qu’on repousse, une impression de ne pas avancer. Si vous vous reconnaissez dans l’un de ces points, sachez que vous n’êtes pas seul (e)  et que ça peut changer."
+      }
+    ]
+  },
+  "about_guidance_section": {
+    "title" : "Mon encadrement dans les associations sportives",
+    "subtitle" : "Accompagner les jeunes vers l’excellence sportive... et personnelle",
+    "subtitle_1" : "La performance ne se construit pas uniquement sur le terrain. Derrière chaque athlète, il y a un mental à renforcer, une motivation à entretenir, une confiance à développer.C’est pourquoi j’accompagne les jeunes sportifs de 13 à 19 ans dans les clubs et associations sportives, avec une approche centrée sur le mental et l’équilibre personnel.",
+    "text" : {
+      "1" : {
+        "title" : "Le mental, la clé pour performer",
+        "pic_url" : "",
+        "text" : {
+            "1" : "Ce que je propose :",
+            "2" : "✔️ Développer la confiance en soi et la motivation",
+            "3" : "✔️ Apprendre à gérer la pression, les émotions et le stress de la compétition",
+            "4" : "✔️ Revenir plus fort après une blessure, physiquement et mentalement",
+            "5" : "✔️ Trouver un équilibre entre les objectifs sportifs et le bien-être personnel",
+            "6" : "Coaching individuel ou en petits groupes, en lien avec les entraîneurs et les familles."
+        }
+      },
+      "2" : {
+        "title" : "Coaching mental pour jeunes athlètes motivés",
+        "pic_url" : "",
+        "text" : {
+          "1" : "“Préparer le corps, c’est bien. Préparer le mental, c’est décisif.”",
+          "2" : "Qu’il s’agisse de reprendre après une blessure, de surmonter une baisse de motivation ou de se préparer à une échéance importante, je propose des outils concrets, adaptés à l’âge et à la réalité de chaque jeune athlète."
+        }
+      },
+      "3" : {
+        "title" : "En lien avec les clubs et les coachs",
+        "pic_url" : "",
+        "text" : {
+          "1" : "Mon accompagnement s’inscrit en collaboration avec les entraîneurs et les encadrants : je ne remplace pas, je complète. Ensemble, on construit un cadre qui permet au jeune de progresser en tant que sportif… et en tant que personne.",
+          "2" : "Vous êtes une association ou un club sportif ? Discutons d’un programme adapté à vos besoins.",
+          "3" : "Me contacter pour une intervention en club"
+        }
+      }
+    }
+  },
+  "about_method_section": {
+    "title" : "Ma méthode de bien être...",
+    "subtitle" : "Équilibre mental & physique : une approche globale pour performer durablement",
+    "subtitle_1" : "Derrière chaque performance, il y a un mental… et un corps bien préparé. La pression de réussir, le stress des compétitions, les blessures, la fatigue mentale… tout cela peut freiner un jeune sportif, un adulte actif, ou toute personne en quête de bien-être. Quand le mental vacille, le corps suit. Et l’inverse est tout aussi vrai.",
+    "b_title" : "Commencez ici!",
+    "right_section" : {
+      "title" : "Une approche bien-être complète, personnalisée",
+      "text" : {
+        "1" : "Je vous propose une méthode holistique qui allie accompagnement mental et soutien nutritionnel pour vous aider à :",
+        "2" : "- Retrouver votre énergie et votre motivation",
+        "3" : "- Améliorer votre concentration et votre récupération",
+        "4" : "- Gérer la pression et le stress avec plus de sérénité"
+      }
+    },
+    "left_section" : {
+      "title" : "Des compléments alimentaires 100% naturels",
+      "text" : {
+        "1" : "Issus de l’agriculture biologique, ces compléments sont riches en omégas et polyphénols, deux nutriments essentiels au bon fonctionnement du cerveau et à l'équilibre des acides gras dans le corps.",
+        "2" : "-  Meilleure récupération après l’effort",
+        "3" : "- Gestion naturelle du stress",
+        "4" : "-  Soutien de la concentration et du système nerveux",
+        "5" : "Ce n’est pas un “produit miracle”, mais un soutien intelligent dans une démarche globale"
+      }
+    }
+  },
+  "about_guide_section": {
+    "title" : "Mon livre LE QWAM : un guide mental pour reprendre le contrôle",
+    "right_section" : {
+      "text" : {
+        "1" : "Parce qu’il ne suffit pas de nourrir le corps, il faut aussi entraîner l’esprit.Mon guide numérique vous accompagne à travers :",
+        "2" : "• Des conseils pratiques pour renforcer votre mental",
+        "3" : "• Des astuces pour mieux gérer la pression",
+        "4" : "• Des exercices concrets pour développer la résilience et la clarté mentale",
+        "5" : "Une vraie boîte à outils pour les sportifs, les étudiants, les parents ou toute personne en quête d'équilibre.",
+        "6" : "📥 [Télécharger le guide numérique] – Version payante avec pages de conseils & exercices"
+      }
+    },
+    "left_section" : {
+      "text" : {
+        "1" : "✔️ Des conseils pratiques pour renforcer votre mental",
+        "2" : "✔️ Des astuces pour mieux gérer la pression",
+        "3" : "✔️ Des exercices concrets pour développer la résilience et la clarté mentale",
+        "4" : "✔️ Une vraie boîte à outils pour les sportifs, les étudiants, les parents ou toute personne en quête d'équilibre.",
+        "b_title" : "Acheter votre livre maintenant"
+      }
+    }
+  },
+  "client_feedback_section": {
+    "title" : "Ils en parlent mieux que moi...",
+    "subtitle" : "Ce que disent celles et ceux que j’ai accompagné",
+    "user" : [
+      {
+        "name" : " Marie",
+        "age" : "",
+        "job" : "Maman d’ado",
+        "pic_url" : "/girl-icon.jpg",
+        "comment" : "Mon fils était replié sur lui-même, il doutait de tout. En quelques semaines, on a vu un vrai changement. Merci pour votre écoute et votre bienveillance."
+      },
+      {
+        "name" : "Nicolas",
+        "age" : "",
+        "job" : "Coach sportif",
+        "pic_url" : "/boy-icon-2.jpg",
+        "comment" : "L’intervention d’Éric dans notre club a fait une vraie différence. Les jeunes sont plus investis, plus calmes, plus ouverts. Le travail sur le mental est indispensable aujourd’hui."
+      },
+      {
+        "name" : "Lucas",
+        "age" : "17 ans",
+        "job" : "Jeune athlète",
+        "pic_url" : "/boy-icon.jpg",
+        "comment" : "Grâce à l’accompagnement d’Éric, j’ai retrouvé ma motivation. J’ai appris à mieux gérer mon stress avant les compétitions et à me concentrer sur ce que je peux contrôler."
+      },
+      {
+        "name" : " Marie",
+        "age" : "",
+        "job" : "Maman d’ado",
+        "pic_url" : "/girl-icon.jpg",
+        "comment" : "Mon fils était replié sur lui-même, il doutait de tout. En quelques semaines, on a vu un vrai changement. Merci pour votre écoute et votre bienveillance."
+      },
+      {
+        "name" : "Nicolas",
+        "age" : "",
+        "job" : "Coach sportif",
+        "pic_url" : "/boy-icon-2.jpg",
+        "comment" : "L’intervention d’Éric dans notre club a fait une vraie différence. Les jeunes sont plus investis, plus calmes, plus ouverts. Le travail sur le mental est indispensable aujourd’hui."
+      },
+      {
+        "name" : "Lucas",
+        "age" : "17 ans",
+        "job" : "Jeune athlète",
+        "pic_url" : "/boy-icon.jpg",
+        "comment" : "Grâce à l’accompagnement d’Éric, j’ai retrouvé ma motivation. J’ai appris à mieux gérer mon stress avant les compétitions et à me concentrer sur ce que je peux contrôler."
+      }
+    ]
+  },
+  "blog_answer_section": {
+    "title" : "BLOG",
+    "subtitle" :  "Aucune question ne reste sans réponse...",
+    "1" : {
+      "question" : "Pourquoi travailler son mental change tout (même en dehors du sport ?" ,
+      "reponse" : "Ce que les athlètes de haut niveau nous apprennent sur la résilience, la concentration et la motivation."
+    },
+    "2" : {
+      "question" : "“Je n’arrive pas à dire ce que je pense” – Comprendre le blocage de la communication" ,
+      "reponse" : "Pourquoi on a du mal à s’exprimer… et comment s’en libérer."
+    },
+    "3" : {
+      "question" : "La procrastination n’est pas de la paresse (et comment la dépasser)" ,
+      "reponse" : "Stratégies concrètes pour enfin passer à l’action."
+    },
+    "4" : {
+      "question" : "Comment bien revenir après une blessure (mentalement et physiquement)" ,
+      "reponse" : "L’erreur que font 80% des jeunes sportifs… et comment s’y préparer autrement."
+    },
+    "5" : {
+      "question" : " Nutrition et bien-être mental : le rôle oublié des omégas et polyphénols" ,
+      "reponse" : "Pourquoi bien manger soutient aussi ton cerveau et ton humeur."
+    },
+    "6" : {
+      "question" : "Ados & relations sociales : comment aider un jeune à sortir de l’isolement" ,
+      "reponse" : "Des outils concrets pour parents, éducateurs et coachs."
+    }
+  },
+  "contact_section": {
+    "title" : "Un accompagnement personnalisé(e) en quelques clics ",
+    "subtitle" : "Me contacter...",
+    "name_placeholder" : "Votre nom",
+    "email_placeholder" : "Votre email",
+    "message_placeholder" : "Votre message",
+    "b_submit" : "ENVOYER MESSAGE"},
+  "footer_section": {
+    "home": "Accueil",
+    "about": "A propos",
+    "interventions": "Interventions",
+    "experiences": "Experiences",
+    "contact": "Contacts",
+    "faq": "FAQ"
+  }
+  
+}

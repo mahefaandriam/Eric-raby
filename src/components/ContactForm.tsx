@@ -1,0 +1,112 @@
+import { useState } from 'react';
+import { Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
+
+type ContactSectionProps = {
+  imageUrl: string;
+  title: string;
+  email: string;
+  phone: string;
+};
+
+export default function ContactForm({ imageUrl, title, email, phone }: ContactSectionProps) {
+  const { t } = useTranslation();
+
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Submitted:', form);
+    // You can send the data to an API here
+    setForm({ name: '', email: '', message: '' });
+  };
+
+  return (
+    <section className="flex flex-col md:flex-row items-stretch justify-center max-w-6xl mx-auto text-xs p-6 gap-10">
+      {/* Left - Image */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="md:w-4/10 w-full"
+        >
+        <img
+          src={imageUrl}
+          alt="Contact illustration"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
+      {/* Right - Contact Info + Form */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="md:w-4/10 w-full bg-transparent p-6"
+        >
+        <h2 className="text-xl font-bold mb-4 text-accent ">{title}</h2>
+        
+        <div className="flex space-x-5 my-6">          
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=eric.raby@hotmail.fr&su=Subject:Hello&body=Hi there!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex text-xs text-accent space-x-5 hover:underline"
+          >
+            <Mail size={20} className='mx-2'/>{email}
+          </a>
+          <a href="tel:+262 692 27 60 61" className="flex text-xs text-accent hover:underline">
+            <Phone size={20} className='mx-2'/>{phone}
+          </a>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder={t('contact_section.name_placeholder')}
+            className="w-full p-3 border border-gray-300 bg-white text-accent"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder={t('contact_section.email_placeholder')}
+            className="w-full p-3 border border-gray-300 bg-white text-accent"
+            required
+          />
+
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder={t('contact_section.message_placeholder')}
+            rows={5}
+            className="w-full p-3 border border-gray-300 bg-white text-accent"
+            required
+          />
+
+          <Link
+            to={"/"}
+            type="submit"
+            className="bg-accent hover:bg-accent/70 text-white font-medium py-2 px-4 transition"
+          >
+            {t('contact_section.b_submit')}
+          </Link>
+        </form>
+      </motion.div>
+    </section>
+  );
+}
