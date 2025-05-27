@@ -61,12 +61,12 @@ const Hero: React.FC<HeroProps> = ({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <Link
-              to={ctaLink}
+            <a
+              href={ctaLink}
               className="inline-block bg-accent hover:bg-gold-700 text-white font-thin px-8 py-3 text-xs  transition duration-300"
             >
               {ctaText}
-            </Link>
+            </a>
           </motion.div>
         )}
       </div>
