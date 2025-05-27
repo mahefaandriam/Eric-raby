@@ -182,92 +182,97 @@ const HomePage = () => {
             </div>
 
             {/* Section 6 */}
-            <div id="experiences" className="h-auto py-20 bg-gray-800 px-2"
+            <div id="experiences" className="relative h-auto py-20 bg-gray-800 px-2"
                 style={{
-                    backgroundImage: `url(/placeholder.svg)`,
+                    backgroundImage: `url(/sport.jpg)`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}
             >
-                <SectionTitle
-                    title={t('about_guidance_section.title')}
-                    subtitle={t('about_guidance_section.subtitle')}
-                    alignment="center"
-                />
-                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.4 }}
-                    >
-                <h2 className="text-xs text-center text-black/50 my-5 px-5 md:px-40">{t('about_guidance_section.subtitle_1')}</h2>
-                <div className="pb-20 mx-5 md:mx-15 lg:mx-35">
-                    <div className="grid grid-cols-6 gap-4 justify-items-stretch ">
-                        <div className="col-span-6 justify-self-center text-xs text-accent"><p>1</p></div>
-                        <div className="col-span-4 col-start-1 col-end-7 lg:col-start-3 md:justify-self-end w-auto lg:w-150">
-                            <div className="bg-white w-auto px-6 py-2">
-                                <div className="">
-                                    <div className="grid grid-cols-[1fr_auto] justify-self-end">            
-                                        <h4 className="mt-5 mx-2 font-bold text-xs">{t('about_guidance_section.text.1.title')}</h4>
-                                        <img
-                                            src="/girl-icon.png"
-                                            alt="place image"
-                                            className="h-12 w-12 shadow-lg self-baseline-last"
-                                        />
-                                    </div>
-                                    <div className="text-gray-500 text-xs my-5 text-right">
-                                        <p>{t('about_guidance_section.text.1.text.1')}</p><br />
-                                        <p>{t('about_guidance_section.text.1.text.2')}</p>
-                                        <p>{t('about_guidance_section.text.1.text.3')}</p>
-                                        <p>{t('about_guidance_section.text.1.text.4')}</p>
-                                        <p>{t('about_guidance_section.text.1.text.5')}</p><br />
-                                        <p>{t('about_guidance_section.text.1.text.6')}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-span-6 justify-self-center text-xs text-accent"><p>2</p></div>
-                        <div className="col-span-4 col-start-1 col-end-7 lg:justify-self-start w-auto lg:w-150">
-                            <div className="bg-white w-auto px-6 py-2">
-                                <div className="">
-                                    <div className="grid grid-cols-[1fr_auto] justify-self-start">
-                                        <img
-                                            src="/ball-icon.png"
-                                            alt="place image"
-                                            className="h-12 w-12 shadow-lg self-baseline-last"
-                                        />                                
-                                        <h4 className="mt-5 mx-2 font-bold text-xs">{t('about_guidance_section.text.2.title')}</h4>
-                                    </div>
-                                    <div className="text-gray-500 text-xs my-5 text-left">
-                                        <p>{t('about_guidance_section.text.2.text.1')}</p><br />
-                                        <p>{t('about_guidance_section.text.2.text.2')}</p>
+            {overlay && (
+                <div className="absolute inset-0 bg-gray-900/80"></div>
+            )}
+                <div className="relative">
+                    <SectionTitle
+                        title={t('about_guidance_section.title')}
+                        subtitle={t('about_guidance_section.subtitle')}
+                        alignment="center"
+                    />
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.4 }}
+                        >
+                    <h2 className="text-xs text-center text-white my-5 px-5 md:px-40">{t('about_guidance_section.subtitle_1')}</h2>
+                    <div className="pb-20 mx-5 md:mx-15 lg:mx-35">
+                        <div className="grid grid-cols-6 gap-4 justify-items-stretch ">
+                            <div className="col-span-6 justify-self-center text-xs text-accent"><p>1</p></div>
+                            <div className="col-span-4 col-start-1 col-end-7 lg:col-start-3 md:justify-self-end w-auto lg:w-150">
+                                <div className="bg-white w-auto px-6 py-2">
+                                    <div className="">
+                                        <div className="grid grid-cols-[1fr_auto] justify-self-end">            
+                                            <h4 className="mt-5 mx-2 font-bold text-xs">{t('about_guidance_section.text.1.title')}</h4>
+                                            <img
+                                                src="/girl-icon.png"
+                                                alt="place image"
+                                                className="h-12 w-12 shadow-lg self-baseline-last"
+                                            />
+                                        </div>
+                                        <div className="text-gray-500 text-xs my-5 text-right">
+                                            <p>{t('about_guidance_section.text.1.text.1')}</p><br />
+                                            <p>{t('about_guidance_section.text.1.text.2')}</p>
+                                            <p>{t('about_guidance_section.text.1.text.3')}</p>
+                                            <p>{t('about_guidance_section.text.1.text.4')}</p>
+                                            <p>{t('about_guidance_section.text.1.text.5')}</p><br />
+                                            <p>{t('about_guidance_section.text.1.text.6')}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-span-6 justify-self-center text-xs text-accent"><p>3</p></div>
-                        <div className="col-span-4 col-start-1 col-end-7 lg:col-start-3 md:justify-self-end w-auto lg:w-150">
-                            <div className="bg-white w-auto px-6 py-2">
-                                <div className="">
-                                    <div className="grid grid-cols-[1fr_auto] justify-self-end">                                        
-                                        <h4 className="mt-5 mx-2 font-bold text-xs">{t('about_guidance_section.text.3.title')}</h4>
-                                        <img
-                                            src="/friendship-icon.png"
-                                            alt="place image"
-                                            className="h-12 w-12 shadow-lg self-baseline-last"
-                                        />
-                                    </div>
-                                    <div className="text-gray-500 text-xs my-5 text-right">
-                                        <p>{t('about_guidance_section.text.3.text.1')}</p><br />
-                                        <p>{t('about_guidance_section.text.3.text.2')}</p><br />
-                                        <p>{t('about_guidance_section.text.3.text.3')}</p>
+                            <div className="col-span-6 justify-self-center text-xs text-accent"><p>2</p></div>
+                            <div className="col-span-4 col-start-1 col-end-7 lg:justify-self-start w-auto lg:w-150">
+                                <div className="bg-white w-auto px-6 py-2">
+                                    <div className="">
+                                        <div className="grid grid-cols-[1fr_auto] justify-self-start">
+                                            <img
+                                                src="/ball-icon.png"
+                                                alt="place image"
+                                                className="h-12 w-12 shadow-lg self-baseline-last"
+                                            />                                
+                                            <h4 className="mt-5 mx-2 font-bold text-xs">{t('about_guidance_section.text.2.title')}</h4>
+                                        </div>
+                                        <div className="text-gray-500 text-xs my-5 text-left">
+                                            <p>{t('about_guidance_section.text.2.text.1')}</p><br />
+                                            <p>{t('about_guidance_section.text.2.text.2')}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-span-6 justify-self-center text-xs text-accent"><p>3</p></div>
+                            <div className="col-span-4 col-start-1 col-end-7 lg:col-start-3 md:justify-self-end w-auto lg:w-150">
+                                <div className="bg-white w-auto px-6 py-2">
+                                    <div className="">
+                                        <div className="grid grid-cols-[1fr_auto] justify-self-end">                                        
+                                            <h4 className="mt-5 mx-2 font-bold text-xs">{t('about_guidance_section.text.3.title')}</h4>
+                                            <img
+                                                src="/friendship-icon.png"
+                                                alt="place image"
+                                                className="h-12 w-12 shadow-lg self-baseline-last"
+                                            />
+                                        </div>
+                                        <div className="text-gray-500 text-xs my-5 text-right">
+                                            <p>{t('about_guidance_section.text.3.text.1')}</p><br />
+                                            <p>{t('about_guidance_section.text.3.text.2')}</p><br />
+                                            <p>{t('about_guidance_section.text.3.text.3')}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-1 col-start-6 bg-transparent"></div>
                         </div>
-                        <div className="col-span-1 col-start-6 bg-transparent"></div>
                     </div>
+                    </motion.div>
                 </div>
-                </motion.div>
             </div>
                 
             {/* Section 7 */}
