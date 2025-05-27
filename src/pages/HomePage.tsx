@@ -92,9 +92,8 @@ const HomePage = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        >
-                
-                            <p className="text-gray-600  text-xs font-thin mb-6 ">
+                        >    
+                            <p className="text-gray-600  text-xs font-light mb-6 ">
                                 {t('aboutme_section.text.2')}
                             </p>
                             <p className="text-gray-600  text-xs font-light mb-6 ">
@@ -404,7 +403,7 @@ const HomePage = () => {
 
             {/* Section 9 */}
             <div
-            className={`relative h-screen pt-18`}
+            className={`relative py-18`}
             style={{
                 backgroundImage: `url(/bodah.jpg)`,
                 backgroundSize: 'cover',
