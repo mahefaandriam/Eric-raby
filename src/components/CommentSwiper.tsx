@@ -70,7 +70,9 @@ export default function CommentSwiper({ addNavigation }: CommentSwiperProps) {
       <Swiper
         style={{ 
           '--swiper-navigation-size': '0.8rem',
-          '--swiper-navigation-color': 'white'
+          '--swiper-navigation-color': 'white',
+          '--swiper-pagination-color': '#CFAB65',
+          '--swiper-pagination-bullet-inactive-color': 'gray'
         }}
         slidesPerView={'auto'}
         centeredSlides={true}

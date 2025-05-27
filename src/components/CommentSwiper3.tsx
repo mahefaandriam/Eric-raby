@@ -63,6 +63,10 @@ export default function CommentSwiper3({ addNavigation }: CommentSwiperProps) {
     <div className="relative  ">
 
       <Swiper
+        style={{ 
+          '--swiper-pagination-color': '#CFAB65',
+          '--swiper-pagination-bullet-inactive-color': 'gray'
+        }}
         slidesPerView={'auto'}
         centeredSlides={true}
         spaceBetween={30}

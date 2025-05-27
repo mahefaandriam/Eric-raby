@@ -58,6 +58,10 @@ export default function CommentSwiper2() {
     <div className="relative  ">
 
       <Swiper
+        style={{ 
+          '--swiper-pagination-color': '#CFAB65',
+          '--swiper-pagination-bullet-inactive-color': 'gray'
+        }}
         slidesPerView={1}
         spaceBetween={90}
         loop={true}
