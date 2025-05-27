@@ -182,7 +182,7 @@ const HomePage = () => {
             </div>
 
             {/* Section 6 */}
-            <div id="experiences" className="relative h-auto py-20 bg-gray-800 px-2"
+            <div id="experiences" className="relative h-auto pt-20 bg-gray-800 px-2"
                 style={{
                     backgroundImage: `url(/sport.jpg)`,
                     backgroundSize: 'cover',
@@ -276,87 +276,92 @@ const HomePage = () => {
             </div>
                 
             {/* Section 7 */}
-            <div className="h-auto bg-gray-800 px-2"
+            <div className="relative h-auto bg-gray-800 px-2 pt-20 pb-5"
                 style={{
-                    backgroundImage: `url(/placeholder.svg)`,
+                    backgroundImage: `url(/dunk.jpg)`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}
             >
-                <SectionTitle
-                    title={t('about_method_section.title')}
-                    subtitle={t('about_method_section.subtitle')}
-                    alignment="center"
-                />
-                <h2 className="text-xs text-center text-black/50 my-5 px-5 md:px-50">{t('about_method_section.subtitle_1')}</h2>
-                <div className="flex justify-center items-center mx-5">
-                    <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.4 }}
-                    >
-                        <Link
-                            to={"/"}
-                            className="inline-block bg-accent hover:bg-gold-700 text-white font-medium px-8 py-3 text-xs transition duration-300"
+            {overlay && (
+                <div className="absolute inset-0 bg-gray-900/80"></div>
+            )}
+                <div className="relative">
+                    <SectionTitle
+                        title={t('about_method_section.title')}
+                        subtitle={t('about_method_section.subtitle')}
+                        alignment="center"
+                    />
+                    <h2 className="text-xs text-center text-white font-thin my-5 px-5 md:px-50">{t('about_method_section.subtitle_1')}</h2>
+                    <div className="flex justify-center items-center mx-5">
+                        <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.4 }}
                         >
-                            {t('about_method_section.b_title')}
-                        </Link>
+                            <Link
+                                to={"/"}
+                                className="inline-block bg-accent hover:bg-gold-700 text-white font-medium px-8 py-3 text-xs transition duration-300"
+                            >
+                                {t('about_method_section.b_title')}
+                            </Link>
+                        </motion.div>
+                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.4 }}
+                        >
+                        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 pb-10">
+                            <div className="place-self-center md:place-self-end place-items-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-90 md:w-80 mb-5 bg-white h-55 md:h-95">
+                                <div className="space-y-2">
+                                    <p className="text-accent text-sm font-bold text-center pb-6">
+                                    {t('about_method_section.right_section.title')}
+                                    </p>
+                                    <p className="text-center text-xs text-gray-500">
+                                        {t('about_method_section.right_section.text.1')}
+                                    </p>
+                                    <p className="text-center text-xs text-gray-500">{t('about_method_section.right_section.text.2')}</p>
+                                    <p className="text-center text-xs text-gray-500">{t('about_method_section.right_section.text.3')}</p>
+                                    <p className="text-center text-xs text-gray-500">{t('about_method_section.right_section.text.4')}</p>
+                                </div>
+                            </div>
+                            <div className="place-self-center md:place-self-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-90 md:w-80 bg-white h-70 md:h-95">
+                                <div className="space-y-2">
+                                    <p className="text-accent text-sm font-bold text-center pb-5 md:pb-10">            
+                                        {t('about_method_section.left_section.title')}
+                                    </p>
+                                    <p className="text-center text-xs text-gray-500"> 
+                                        {t('about_method_section.left_section.text.1')}
+                                    </p>
+                                    <p className="text-center text-xs text-gray-500">{t('about_method_section.left_section.text.2')}</p>
+                                    <p className="text-center text-xs text-gray-500">{t('about_method_section.left_section.text.3')}</p>
+                                    <p className="text-center text-xs text-gray-500 pb-5 md:pb-14">{t('about_method_section.left_section.text.4')}</p>
+                                    <p className="text-center text-xs text-gray-500 font-italic">{t('about_method_section.left_section.text.5')}</p>
+                                </div>
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.4 }}
-                    >
-                    <div className="grid grid-cols-1 md:grid-cols-2 mt-10 pb-10">
-                        <div className="place-self-center md:place-self-end place-items-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-90 md:w-80 mb-5 bg-white h-55 md:h-95">
-                            <div className="space-y-2">
-                                <p className="text-blue-900 text-sm font-bold text-center pb-6">
-                                {t('about_method_section.right_section.title')}
-                                </p>
-                                <p className="text-center text-xs text-gray-500">
-                                    {t('about_method_section.right_section.text.1')}
-                                </p>
-                                <p className="text-center text-xs text-gray-500">{t('about_method_section.right_section.text.2')}</p>
-                                <p className="text-center text-xs text-gray-500">{t('about_method_section.right_section.text.3')}</p>
-                                <p className="text-center text-xs text-gray-500">{t('about_method_section.right_section.text.4')}</p>
-                            </div>
-                        </div>
-                        <div className="place-self-center md:place-self-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-90 md:w-80 bg-white h-70 md:h-95">
-                            <div className="space-y-2">
-                                <p className="text-blue-900 text-sm font-bold text-center pb-5 md:pb-10">            
-                                    {t('about_method_section.left_section.title')}
-                                </p>
-                                <p className="text-center text-xs text-gray-500"> 
-                                    {t('about_method_section.left_section.text.1')}
-                                </p>
-                                <p className="text-center text-xs text-gray-500">{t('about_method_section.left_section.text.2')}</p>
-                                <p className="text-center text-xs text-gray-500">{t('about_method_section.left_section.text.3')}</p>
-                                <p className="text-center text-xs text-gray-500 pb-5 md:pb-14">{t('about_method_section.left_section.text.4')}</p>
-                                <p className="text-center text-xs text-gray-500 font-italic">{t('about_method_section.left_section.text.5')}</p>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
 
             </div>
             
             {/* Section 8 */}
-            <div className="h-auto bg-gray-800 py-10"
+            <div className="relative h-auto bg-gray-800 py-10"
                 style={{
-                    backgroundImage: `url(/placeholder.svg)`,
+                    backgroundImage: `url(/montain-3.jpg)`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}
             >
-                <div className="md:flex justify-center items-center mx-5 md:mx-20 ld:mx-40">
-                    <div className="relative place-self-start mr-5">
-                        <SectionTitle
-                            title={t('about_guide_section.title')}
-                            subtitle="- Éric Raby"
-                            alignment="left"
-                        />
-                        <div className="text-xs text-black/50">
+            {overlay && (
+                <div className="absolute inset-0 bg-white/50"></div>
+            )}
+                <div className="relative md:flex justify-center items-center mx-5 md:mx-50 ld:mx-40">
+                    <div className="relative place-self-start mt-8 mr-20">                      
+                        <h1 className="relative text-2xl font-bold mb-6 text-left text-gray-800">{t('about_guide_section.title')}</h1>
+                        <h1 className="text-sm  font-light mb-6 text-left text-gray-800">"- Éric Raby"</h1>
+                        <div className="text-xs text-gray-800">
                             <p>
                                 {t('about_guide_section.right_section.text.1')}               
                             </p><br />

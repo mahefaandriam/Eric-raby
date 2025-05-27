@@ -30,7 +30,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className={`font-serif text-2xl md:text-3xl font-bold mb-4 ${textColor}`}
+        className={` text-2xl md:text-3xl font-bold mb-4 ${textColor}`}
       >
         {title}
       </motion.h2>
