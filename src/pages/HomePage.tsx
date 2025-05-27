@@ -156,12 +156,15 @@ const HomePage = () => {
             {/* Section 5 */}
             <div className="relative flex items-center justify-center h-auto md:h-screen bg-gray-800"
                 style={{
-                    backgroundImage: `url(/placeholder.svg)`,
+                    backgroundImage: `url(/basket-team.jpg)`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}
             >
-                <div className="pt-25 pb-10 md:py-5 mx-10 my-8 md:mx-2 lg:mx-30 bg-gray-900/30">
+            {overlay && (
+                <div className="absolute inset-0 bg-gray-900/80"></div>
+            )}
+                <div className="relative pt-25 pb-10 md:py-5 mx-10 my-8 md:mx-2 lg:mx-30 bg-slate-900/90">
                     <div className="grid grid-cols-5 ">
                         <div className="col-span-5 md:col-span-2 flex items-center justify-center text-center mx-10">                            
                             <Quote size={55} fill="#A28956" strokeWidth={0} style={{ transform: 'rotate(180deg)' }} className="absolute place-self-start max-md:top-10 md:mr-50 lg:mr-70 h-auto w-13 md:w-15 my-2"/>

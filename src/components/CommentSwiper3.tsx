@@ -87,7 +87,7 @@ export default function CommentSwiper3({ addNavigation }: CommentSwiperProps) {
                 index === activeIndex ? 'scale-105 z-10' : 'scale-95 opacity-80'
             }`}
         >
-            <div className='bg-gray-800 shadow-md h-auto w-72 my-8 md:my-15 py-4'>
+            <div className='bg-gray-800 border border-white/25 shadow-md h-auto w-72 my-8 md:my-15 py-4'>
                 <div className="">
                     <div className="relative place-self-center">
                         <div className="relative ">
