@@ -301,7 +301,7 @@ const HomePage = () => {
                     transition={{ duration: 0.7, delay: 0.4 }}
                     >
                     <div className="grid grid-cols-1 md:grid-cols-2 mt-10 pb-10">
-                        <div className="place-self-center md:place-self-end place-items-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-70 mb-5 bg-white h-95">
+                        <div className="place-self-center md:place-self-end place-items-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-90 md:w-80 mb-5 bg-white h-55 md:h-95">
                             <div className="space-y-2">
                                 <p className="text-blue-900 text-sm font-bold text-center pb-6">
                                 {t('about_method_section.right_section.title')}
@@ -314,9 +314,9 @@ const HomePage = () => {
                                 <p className="text-center text-xs text-gray-500">{t('about_method_section.right_section.text.4')}</p>
                             </div>
                         </div>
-                        <div className="place-self-center md:place-self-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-70 bg-white h-95">
+                        <div className="place-self-center md:place-self-start grid grid-cols-1 gap-4 px-5 py-5 mx-5 w-90 md:w-80 bg-white h-70 md:h-95">
                             <div className="space-y-2">
-                                <p className="text-blue-900 text-sm font-bold text-center pb-10">            
+                                <p className="text-blue-900 text-sm font-bold text-center pb-5 md:pb-10">            
                                     {t('about_method_section.left_section.title')}
                                 </p>
                                 <p className="text-center text-xs text-gray-500"> 
@@ -324,7 +324,7 @@ const HomePage = () => {
                                 </p>
                                 <p className="text-center text-xs text-gray-500">{t('about_method_section.left_section.text.2')}</p>
                                 <p className="text-center text-xs text-gray-500">{t('about_method_section.left_section.text.3')}</p>
-                                <p className="text-center text-xs text-gray-500 pb-14">{t('about_method_section.left_section.text.4')}</p>
+                                <p className="text-center text-xs text-gray-500 pb-5 md:pb-14">{t('about_method_section.left_section.text.4')}</p>
                                 <p className="text-center text-xs text-gray-500 font-italic">{t('about_method_section.left_section.text.5')}</p>
                             </div>
                         </div>
