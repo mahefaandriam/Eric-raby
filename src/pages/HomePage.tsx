@@ -26,7 +26,7 @@ const HomePage = () => {
                     subtitle=""
                     image="/on-my-way.jpg"
                     ctaText={t('hero_section.b_title')}
-                    ctaLink="/"
+                    ctaLink="#contact"
                 />
             </div>
 
@@ -299,12 +299,12 @@ const HomePage = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.4 }}
                         >
-                            <Link
-                                to={"/"}
+                            <a
+                                href={"/"}
                                 className="inline-block bg-accent hover:bg-gold-700 text-white font-medium px-8 py-3 text-xs transition duration-300"
                             >
                                 {t('about_method_section.b_title')}
-                            </Link>
+                            </a>
                         </motion.div>
                     </div>
                     <motion.div
