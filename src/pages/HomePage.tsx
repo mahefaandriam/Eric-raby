@@ -161,7 +161,7 @@ const HomePage = () => {
                     backgroundPosition: 'center'
                 }}
             >
-                <div className="pt-20 pb-4 md:py-5 mx-10 my-8 md:mx-2 lg:mx-30 bg-gray-900/30">
+                <div className="pt-25 pb-10 md:py-5 mx-10 my-8 md:mx-2 lg:mx-30 bg-gray-900/30">
                     <div className="grid grid-cols-5 ">
                         <div className="col-span-5 md:col-span-2 flex items-center justify-center text-center mx-10">                            
                             <Quote size={55} fill="#A28956" strokeWidth={0} style={{ transform: 'rotate(180deg)' }} className="absolute place-self-start max-md:top-10 md:mr-50 lg:mr-70 h-auto w-13 md:w-15 my-2"/>
@@ -179,7 +179,7 @@ const HomePage = () => {
             </div>
 
             {/* Section 6 */}
-            <div id="experiences" className="h-auto bg-gray-800 px-2"
+            <div id="experiences" className="h-auto py-20 bg-gray-800 px-2"
                 style={{
                     backgroundImage: `url(/placeholder.svg)`,
                     backgroundSize: 'cover',
