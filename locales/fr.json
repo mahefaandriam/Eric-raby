@@ -272,12 +272,12 @@
     "message_placeholder" : "Votre message",
     "b_submit" : "ENVOYER MESSAGE"},
   "footer_section": {
-    "home": "Accueil",
+    "home": "Acceuil",
     "about": "A propos",
     "interventions": "Interventions",
     "experiences": "Experiences",
     "contact": "Contacts",
-    "faq": "FAQ"
+    "faq": "Blog"
   }
   
 }

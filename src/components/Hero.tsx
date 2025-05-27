@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="font-serif text-accent text-lg md:text-3xl font-bold leading-tight"
+          className="text-accent text-xl md:text-4xl font-bold leading-tight"
         >
           {title}
         </motion.h1>

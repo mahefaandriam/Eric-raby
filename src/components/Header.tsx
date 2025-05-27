@@ -185,35 +185,35 @@ const Header = () => {
           <a
             href="#home"
             onClick={closeMenu}
-            className="hover:text-black/25 text-xs font-thin text-black/80 transition duration-200"
+            className="hover:text-black/25 text-xs font text-black/80 transition duration-200"
           >
             {t('header.home')}
           </a>
           <a
             href="#about"
             onClick={closeMenu}
-            className="hover:text-black/25 text-xs font-thin text-black/80 transition duration-200"
+            className="hover:text-black/25 text-xs font text-black/80 transition duration-200"
           >
             {t('header.about')}
           </a>
           <a
             href="#interventions"
             onClick={closeMenu}
-            className="hover:text-black/25 text-xs font-thin text-black/80 transition duration-200"
+            className="hover:text-black/25 text-xs font text-black/80 transition duration-200"
           >
             {t('header.interventions')}
           </a>
           <a
             href="#experiences"
             onClick={closeMenu}
-            className="hover:text-black/25 text-xs font-thin text-black/80 transition duration-200"
+            className="hover:text-black/25 text-xs font text-black/80 transition duration-200"
           >
             {t('header.experiences')}
           </a>
           <a
             href="#contact"
             onClick={closeMenu}
-            className="hover:text-black/25 text-xs font-thin text-black/80 transition duration-200"
+            className="hover:text-black/25 text-xs font text-black/80 transition duration-200"
           >
             {t('header.contacts')}
           </a>
