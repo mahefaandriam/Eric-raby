@@ -434,7 +434,7 @@ const HomePage = () => {
             {overlay && (
                 <div className="absolute inset-0 bg-white/30"></div>
             )}
-                <div className="relative">
+                <div className="relative py-20">
                     <h1 className="relative text-2xl font-bold mb-6 text-center text-white">{t('blog_answer_section.title')}</h1>
                     <h1 className="text-sm font-light mb-6 text-center text-white">{t('blog_answer_section.subtitle')}</h1>
                     <div className="md:flex md:justify-center items-center mx-5 md:space-x-10 md:mx-65 pb-5 z-50">
