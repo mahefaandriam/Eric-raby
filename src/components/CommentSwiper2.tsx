@@ -60,7 +60,7 @@ export default function CommentSwiper2() {
       <Swiper
         style={{ 
           '--swiper-pagination-color': '#CFAB65',
-          '--swiper-pagination-bullet-inactive-color': 'gray'
+          '--swiper-pagination-bullet-inactive-color': 'black'
         }}
         slidesPerView={1}
         spaceBetween={90}
