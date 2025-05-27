@@ -115,7 +115,7 @@ const HomePage = () => {
             <div id="interventions"
                 className={`relative h-auto flex items-center justify-center`}
                 style={{
-                    backgroundImage: `url(/placeholder.svg)`,
+                    backgroundImage: `url(/coaching.jpg)`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}
