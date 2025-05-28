@@ -10,12 +10,22 @@ export default function handler(req, res) {
 
   const { name, email, message } = req.body;
 
-
-  return res.status(400).json({error: name , m: message});
-  
-
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'All fields are required' });
+  }
+
+  try {
+    const result = await resend.emails.send({
+      from: 'Your Site <you@yourdomain.com>', // Use a verified domain or resendmail.com
+      to: ['your@email.com'],                 // Your email to receive the form
+      subject: `New message from ${name}`,
+      text: `From: ${name} (${email})\n\n${message}`,
+    });
+
+    return res.status(200).json({ success: true, data: result });
+  } catch (error) {
+    console.error('Resend error:', error);
+    return res.status(500).json({ error: 'Failed to send email' });
   }
 
 }
