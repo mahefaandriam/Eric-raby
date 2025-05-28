@@ -10,6 +10,7 @@ import ContactForm from "../components/ContactForm";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import { Quote} from 'lucide-react';
 
 
@@ -93,18 +94,14 @@ const HomePage = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                         >    
-                            <p className="text-gray-600  text-xs font-light mb-6 ">
-                                {t('aboutme_section.text.2')}
-                            </p>
-                            <p className="text-gray-600  text-xs font-light mb-6 ">
-                                {t('aboutme_section.text.3')}
-                            </p>
-                            <p className="text-gray-600  text-xs font-light mb-6 ">
-                                {t('aboutme_section.text.4')}
-                            </p>
-                            <p className="text-gray-600  text-xs font-light mb-6 ">
-                                {t('aboutme_section.text.5')}
-                            </p>
+                            <Trans
+                                i18nKey="bio"
+                                components={{
+                                name: <span className="underline underline-offset-4 decoration-blue-500 font-semibold" />,
+                                method: <span className="underline decoration-dotted text-purple-600" />,
+                                teen: <span className="underline text-pink-500" />
+                                }}
+                            />
 
                         </motion.div>
                     </div>
