@@ -1,129 +1,166 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
 
-export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    to: '',
-    subject: '',
-    message: '',
-  });
+type ContactSectionProps = {
+  imageUrl: string;
+  title: string;
+  email: string;
+  phone: string;
+};
 
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
-  const [error, setError] = useState<string | null>(null);
+export default function ContactForm({ imageUrl, title, email, phone }: ContactSectionProps) {
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC;
+
+  const { t } = useTranslation();
+
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  /*const handleSubmit = async (e: { preventDefault: () => void; }) => {
+      e.preventDefault();
+      setStatus('sending');
+  
+      try {
+        await emailjs.send(
+          serviceID,
+          templateID,
+          {
+            user_name: form.name,
+            user_email: form.email,
+            message: form.message,
+          },
+          publicKey
+        );
+  
+        setStatus('success');
+        setForm({ name: '', email: '', message: '' });
+      } catch (error) {
+        console.error('Email send error:', error);
+        setStatus('error');
+      }
+    };
+    */
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setStatus('sending');
-    setError(null);
-
-    const { to, subject, message } = formData;
 
     try {
       const res = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ to, subject, html: `<p>${message}</p>`}),
+        body: JSON.stringify(form),
       });
 
-      if (!res.ok) {
-        let errorMessage = 'Unknown error';
-        try {
-          const errorData = await res.json();
-          errorMessage = errorData.error || errorMessage;try {
-      const res = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ to, subject, html: `<p>${message}</p>` }),
-      });
-
-      if (!res.ok) {
-        let errorMessage = 'Unknown error';
-        try {
-          const errorData = await res.json();
-          errorMessage = errorData.error || errorMessage;
-        } catch (err) {
-          // response wasn't JSON — use status text
-          errorMessage = res.statusText;
-        }
-        throw new Error(errorMessage);
+      if (res.ok) {
+        setStatus('success');
+        setForm({ name: '', email: '', message: '' });
+      } else {
+        throw new Error();
       }
-
-      setStatus('sent');
-      setFormData({ to: '', subject: '', message: '' });
-    } catch (err: any) {
-      setStatus('error');
-      setError(err.message);
-    }
-
     } catch (err) {
-      // response wasn't JSON — use status text
-      errorMessage = res.statusText;
+      setStatus('error');
+      console.log('error: ' + err);
     }
-    throw new Error(errorMessage);
-  }
-
-  setStatus('sent');
-  setFormData({ to: '', subject: '', message: '' });
-} catch (err: any) {
-  setStatus('error');
-  setError(err.message);
-}
-
   };
 
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto p-4 border rounded shadow">
-      <h2 className="text-xl font-bold">Send an Email</h2>
-
-      <div>
-        <label className="block font-medium">To:</label>
-        <input
-          type="email"
-          name="to"
-          value={formData.to}
-          onChange={handleChange}
-          required
-          className="w-full border px-2 py-1 rounded"
+    <section className="flex flex-col md:flex-row items-stretch justify-center max-w-6xl mx-auto text-xs p-6 gap-10">
+      {/* Left - Image */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="md:w-4/10 w-full"
+        >
+        <img
+          src={imageUrl}
+          alt="Contact illustration"
+          className="w-full h-full object-cover"
         />
-      </div>
+      </motion.div>
 
-      <div>
-        <label className="block font-medium">Subject:</label>
-        <input
-          type="text"
-          name="subject"
-          value={formData.subject}
-          onChange={handleChange}
-          required
-          className="w-full border px-2 py-1 rounded"
-        />
-      </div>
+      {/* Right - Contact Info + Form */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="md:w-4/10 w-full bg-transparent p-6"
+        >
+        <h2 className="text-xl font-bold mb-4 text-accent ">{title}</h2>
+        
+        <div className="flex space-x-5 my-6">          
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=eric.raby@hotmail.fr&su=Subject:Hello&body=Hi there!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex text-xs text-accent space-x-5 hover:underline"
+          >
+            <Mail size={20} className='mx-2'/>{email}
+          </a>
+          <a href="tel:+262 692 27 60 61" className="flex text-xs text-accent hover:underline">
+            <Phone size={20} className='mx-2'/>{phone}
+          </a>
+        </div>
 
-      <div>
-        <label className="block font-medium">Message:</label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          className="w-full border px-2 py-1 rounded"
-          rows={5}
-        />
-      </div>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder={t('contact_section.name_placeholder')}
+            className="w-full p-3 border border-gray-300 bg-white text-accent"
+            required
+          />
 
-      <button
-        type="submit"
-        disabled={status === 'sending'}
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50"
-      >
-        {status === 'sending' ? 'Sending...' : 'Send Email'}
-      </button>
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder={t('contact_section.email_placeholder')}
+            className="w-full p-3 border border-gray-300 bg-white text-accent"
+            required
+          />
 
-      {status === 'sent' && <p className="text-green-600">Email sent successfully!</p>}
-      {status === 'error' && <p className="text-red-600">Error: {error}</p>}
-    </form>
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder={t('contact_section.message_placeholder')}
+            rows={5}
+            className="w-full p-3 border border-gray-300 bg-white text-accent"
+            required
+          />
+
+          <button
+            type="submit"
+            className="bg-accent hover:bg-accent/70 text-white font-medium py-2 px-4 transition"
+          >
+            {t('contact_section.b_submit')}
+          </button>
+        </form>
+
+      {status === 'sending' && <p className="text-accent text-sm">Sending...</p>}
+      {status === 'success' && <p className="text-green-600 text-sm">Message sent!</p>}
+      {status === 'error' && <p className="text-red-600 text-sm">Failed to send.</p>}
+      </motion.div>
+    </section>
   );
 }
