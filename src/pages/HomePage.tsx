@@ -94,13 +94,18 @@ const HomePage = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                         >    
-                            <p className="whitespace-pre-line">
+                            <p className="whitespace-pre-line text-xs text-gray-800">
                                 <Trans
                                 i18nKey="aboutme_section.bio"
                                 components={{
                                     name: <span className="underline font-semibold text-blue-700" />,
-                                    method: <span className="underline decoration-dotted text-purple-600" />,
-                                    teen: <span className="underline text-pink-600" />
+                                    skills: <span className="underline decoration-wavy decoration-orange-400" />,
+                                    issues: <span className="underline decoration-dotted text-red-500" />,
+                                    method: <span className="underline text-purple-700" />,
+                                    strengths: <span className="underline text-green-600" />,
+                                    teen: <span className="underline text-pink-600 font-medium" />,
+                                    cert: <span className="underline decoration-dashed text-indigo-600" />,
+                                    org: <span className="underline font-medium text-gray-700" />
                                 }}
                                 />
                             </p>
