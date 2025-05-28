@@ -300,7 +300,7 @@ const HomePage = () => {
                         transition={{ duration: 0.7, delay: 0.4 }}
                         >
                             <a
-                                href={"/"}
+                                href={"#contact"}
                                 className="inline-block bg-accent hover:bg-gold-700 text-white font-medium px-8 py-3 text-xs transition duration-300"
                             >
                                 {t('about_method_section.b_title')}
