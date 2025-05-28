@@ -65,7 +65,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
 
     try {
       const res = await fetch('/api/hello', {
-        method: 'POST',
+        method: 'GET',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
