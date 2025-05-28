@@ -8,7 +8,9 @@ export default function handler(req, res) {
     return res.status(405).json({ error: 'Method Not Allowed' , method: req.method});
   }
 
-  const { name, email, message } = req.body;
+ // const { name, email, message } = req.body;
+
+  return res.status(400).json({error: "good"});
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'All fields are required' });
