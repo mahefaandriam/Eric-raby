@@ -25,16 +25,30 @@ export default function ContactForm() {
       const res = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          to,
-          subject,
-          html: `<p>${message}</p>`,
-        }),
+        body: JSON.stringify({ to, subject, html: `<p>${message}</p>`}),
       });
 
       if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.error || 'Unknown error');
+        let errorMessage = 'Unknown error';
+        try {
+          const errorData = await res.json();
+          errorMessage = errorData.error || errorMessage;try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ to, subject, html: `<p>${message}</p>` }),
+      });
+
+      if (!res.ok) {
+        let errorMessage = 'Unknown error';
+        try {
+          const errorData = await res.json();
+          errorMessage = errorData.error || errorMessage;
+        } catch (err) {
+          // response wasn't JSON — use status text
+          errorMessage = res.statusText;
+        }
+        throw new Error(errorMessage);
       }
 
       setStatus('sent');
@@ -43,6 +57,21 @@ export default function ContactForm() {
       setStatus('error');
       setError(err.message);
     }
+
+    } catch (err) {
+      // response wasn't JSON — use status text
+      errorMessage = res.statusText;
+    }
+    throw new Error(errorMessage);
+  }
+
+  setStatus('sent');
+  setFormData({ to: '', subject: '', message: '' });
+} catch (err: any) {
+  setStatus('error');
+  setError(err.message);
+}
+
   };
 
   return (
