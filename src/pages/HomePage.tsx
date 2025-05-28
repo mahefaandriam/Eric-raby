@@ -94,15 +94,16 @@ const HomePage = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                         >    
-                            <Trans
+                            <p className="whitespace-pre-line">
+                                <Trans
                                 i18nKey="aboutme_section.bio"
                                 components={{
-                                name: <span className="underline underline-offset-4 decoration-blue-500 font-semibold" />,
-                                method: <span className="underline decoration-dotted text-purple-600" />,
-                                teen: <span className="underline text-pink-500" />
+                                    name: <span className="underline font-semibold text-blue-700" />,
+                                    method: <span className="underline decoration-dotted text-purple-600" />,
+                                    teen: <span className="underline text-pink-600" />
                                 }}
-                            />
-
+                                />
+                            </p>
                         </motion.div>
                     </div>
                 </div>
