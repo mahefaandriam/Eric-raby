@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
 
 type ContactSectionProps = {
   imageUrl: string;
@@ -12,21 +13,47 @@ type ContactSectionProps = {
 };
 
 export default function ContactForm({ imageUrl, title, email, phone }: ContactSectionProps) {
+
+  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const { t } = useTranslation();
 
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Submitted:', form);
-    // You can send the data to an API here
-    setForm({ name: '', email: '', message: '' });
-  };
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+      e.preventDefault();
+      setStatus('sending');
+  
+      try {
+        await emailjs.send(
+          serviceID,
+          templateID,
+          {
+            user_name: form.name,
+            user_email: form.email,
+            message: form.message,
+          },
+          publicKey
+        );
+  
+        setStatus('success');
+        setForm({ name: '', email: '', message: '' });
+      } catch (error) {
+        console.error('Email send error:', error);
+        setStatus('error');
+      }
+    };
 
   return (
     <section className="flex flex-col md:flex-row items-stretch justify-center max-w-6xl mx-auto text-xs p-6 gap-10">
@@ -98,14 +125,17 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             required
           />
 
-          <Link
-            to={"/"}
+          <button
             type="submit"
             className="bg-accent hover:bg-accent/70 text-white font-medium py-2 px-4 transition"
           >
             {t('contact_section.b_submit')}
-          </Link>
+          </button>
         </form>
+
+      {status === 'sending' && <p className="text-accent text-sm">Sending...</p>}
+      {status === 'success' && <p className="text-green-600 text-sm">Message sent!</p>}
+      {status === 'error' && <p className="text-red-600 text-sm">Failed to send.</p>}
       </motion.div>
     </section>
   );
