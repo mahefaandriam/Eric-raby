@@ -73,7 +73,7 @@ const HomePage = () => {
                         >
                         <div className="absolute max-md:-bottom-10  md:mt-40 lg:mt-50 left-20 md:-left-5 lg:-left-15 w-60 md:w-40 lg:w-40 h-auto px-2 py-4 bg-accent">
                             <p className="text-xs font-bold text-center text-white">
-                                {t('aboutme_section.text.1')}
+                                {t('aboutme_section.text')}
                             </p>
                             <p className="text-xs font-light text-center text-white">
                                 – {t('author')}
