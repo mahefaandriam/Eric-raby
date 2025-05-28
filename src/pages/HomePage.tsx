@@ -363,7 +363,7 @@ const HomePage = () => {
                 <div className="relative md:flex justify-center items-center mx-5 md:mx-50 ld:mx-40">
                     <div className="relative place-self-start mt-8 mr-20">                      
                         <h1 className="relative text-2xl font-bold mb-6 text-left text-gray-800">{t('about_guide_section.title')}</h1>
-                        <h1 className="text-sm  font-bold mb-6 text-left text-gray-800">"- Éric Raby"</h1>
+                        <h1 className="text-2sm  font-bold mb-6 text-left text-gray-800">"Éric Raby"</h1>
                         <div className="text-xs text-gray-800">
                             <p>
                                 {t('about_guide_section.right_section.text.1')}               
