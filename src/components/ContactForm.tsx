@@ -130,7 +130,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             onChange={handleChange}
             placeholder={t('contact_section.name_placeholder')}
             className="w-full p-3 border border-gray-300 bg-white text-accent"
-            required
+            
           />
 
           <input
