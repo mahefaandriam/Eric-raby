@@ -67,6 +67,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
       });
 
       if (res.ok) {
+        console.log(res.formData);
         setStatus('success');
         setForm({ name: '', email: '', message: '' });
       } else {
