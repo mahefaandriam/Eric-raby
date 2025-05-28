@@ -89,7 +89,7 @@ export default function CommentSwiper2() {
                         className="relative place-self-center w-20 max-h-25 object-cover z-30"
                         />
                         <div className="">
-                          <p className="font-thin text-xs text-gray-900">{c.title}</p>
+                          <p className="font-bold text-xs text-gray-900">{c.title}</p>
                         </div>
                     </div>
                 </div>
