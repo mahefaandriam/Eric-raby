@@ -31,7 +31,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
     });
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  /*const handleSubmit = async (e: { preventDefault: () => void; }) => {
       e.preventDefault();
       setStatus('sending');
   
@@ -54,6 +54,29 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
         setStatus('error');
       }
     };
+    */
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      if (res.ok) {
+        setStatus('success');
+        setForm({ name: '', email: '', message: '' });
+      } else {
+        throw new Error();
+      }
+    } catch (err) {
+      setStatus('error');
+    }
+  };
+
 
   return (
     <section className="flex flex-col md:flex-row items-stretch justify-center max-w-6xl mx-auto text-xs p-6 gap-10">
