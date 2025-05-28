@@ -56,6 +56,10 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
     };
     */
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    fetch('/api/hello')
+    .then(res => res.json())
+    .then(data => console.log(data));
+
     e.preventDefault();
     setStatus('sending');
 
