@@ -533,7 +533,7 @@ const HomePage = () => {
                     imageUrl="/offrande-time.jpg"
                     title={t('contact_section.title')}
                     email="eric.raby@hotmail.fr"
-                    phone="+ 262 692 27 60 61"
+                    phone="0693 47 44 69"
                 />
             </div>      
 
