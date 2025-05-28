@@ -95,7 +95,7 @@ const HomePage = () => {
                         viewport={{ once: true }}
                         >    
                             <Trans
-                                i18nKey="bio"
+                                i18nKey="aboutme_section.bio"
                                 components={{
                                 name: <span className="underline underline-offset-4 decoration-blue-500 font-semibold" />,
                                 method: <span className="underline decoration-dotted text-purple-600" />,
