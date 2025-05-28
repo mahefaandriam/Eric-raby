@@ -3,30 +3,25 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import { Resend } from 'resend';
 
+type State = { error: string } | { data: string };
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async (req: VercelRequest, res: VercelResponse) => {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+export async function send(prevState: State, formData: FormData) {
+  const email = formData.get("email") as string;
+
+  const { data, error } = await resend.emails.send({
+    from: "Vercel <vercel@resend.dev>",
+    to: [email],
+    subject: "Join team on Vercel",
+    react: "nothi",
+  });
+
+  if (error) {
+    return { error: error.message };
   }
 
-  const { to, subject, html } = req.body;
+  console.log(data);
 
-  if (!to || !subject || !html) {
-    return res.status(400).json({ error: 'Missing required fields: to, subject, html' });
-  }
-
-  try {
-    const data = await resend.emails.send({
-      from: 'mahefaandriam67@gmail.com', // Must be a verified sender/domain
-      to,
-      subject,
-      html,
-    });
-
-    return res.status(200).json({ success: true, data });
-  } catch (error) {
-    console.error('Email send error:', error);
-    return res.status(500).json({ error: 'Failed to send email' });
-  }
-};
+  return { data: "Email sent!" };
+}
