@@ -115,7 +115,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           </a>
           <a href="tel:0693 47 44 69" className="flex text-xs text-accent hover:underline">
             <Phone size={20} className='mx-2'/>{phone}
-          </a>
+          </a> 
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
