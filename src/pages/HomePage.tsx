@@ -99,13 +99,13 @@ const HomePage = () => {
                                 i18nKey="aboutme_section.bio"
                                 components={{
                                     name: <span className="underline font-semibold text-black-700" />,
-                                    skills: <span className="underline decoration-wavy decoration-accent" />,
+                                    skills: <span className="underline text-gray-700" />,
                                     issues: <span className="underline decoration-dotted text-red-500" />,
                                     method: <span className="underline font-semibold text-black-700" />,
                                     strengths: <span className="underline text-accen decoration-accentt" />,
                                     teen: <span className="underline font-semibold text-black-700 " />,
-                                    cert: <span className="underline decoration-dashed text-indigo-600" />,
-                                    org: <span className="underline font-medium text-gray-700" />
+                                    cert: <span className="underline text-gray-700" />,
+                                    org: <span className="underline text-gray-700" />
                                 }}
                                 />
                             </p>
