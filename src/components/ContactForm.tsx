@@ -113,7 +113,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           >
             <Mail size={20} className='mx-2'/>{email}
           </a>
-          <a href="tel:+262 692 27 60 61" className="flex text-xs text-accent hover:underline">
+          <a href="tel:0693 47 44 69" className="flex text-xs text-accent hover:underline">
             <Phone size={20} className='mx-2'/>{phone}
           </a>
         </div>
