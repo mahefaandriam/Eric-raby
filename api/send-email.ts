@@ -1,7 +1,7 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import { Resend } from 'resend';
 
-const resend = new Resend('re_ha462YJH_7SiipBs7EyM6j1AFrZ7CsaBo');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (req.method !== 'POST') {
