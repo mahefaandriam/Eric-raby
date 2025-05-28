@@ -1,3 +1,5 @@
+"use server";
+
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import { Resend } from 'resend';
 
