@@ -15,8 +15,8 @@ export default async function handler(req, res) {
 
   try {
     const result = await resend.emails.send({
-      from: 'Your Site <you@yourdomain.com>', // Use a verified domain or resendmail.com
-      to: ['your@email.com'],                 // Your email to receive the form
+      from: 'Eric Raby <www.eric-raby.com>', // Use a verified domain or resendmail.com
+      to: ['fenoandriams@gmail.com'],                 // Your email to receive the form
       subject: `New message from ${name}`,
       text: `From: ${name} (${email})\n\n${message}`,
     });
