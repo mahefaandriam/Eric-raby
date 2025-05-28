@@ -100,7 +100,7 @@ const HomePage = () => {
                                 components={{
                                     name: <span className="underline font-semibold text-black-700" />,
                                     skills: <span className="underline text-gray-700" />,
-                                    issues: <span className="underline decoration-dotted text-red-500" />,
+                                    issues: <span className="underline text-gray-700" />,
                                     method: <span className="underline font-semibold text-black-700" />,
                                     strengths: <span className="underline text-accen decoration-accentt" />,
                                     teen: <span className="underline font-semibold text-black-700 " />,
