@@ -16,7 +16,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 
   try {
     const data = await resend.emails.send({
-      from: 'Your Name <your@yourdomain.com>', // Must be a verified sender/domain
+      from: 'mahefaandriam67@gmail.com', // Must be a verified sender/domain
       to,
       subject,
       html,
