@@ -19,6 +19,12 @@ const Header = () => {
     const storedLang = sessionStorage.getItem('isFR');
     if (storedLang !== null) {
       setIsLanguageFR(storedLang === 'true'); 
+    } else {
+      console.log("null lang");
+      const userLang = navigator.language;
+      if (userLang == 'fr') setIsLanguageFR(storedLang === 'true'); 
+      if (userLang == 'en') setIsLanguageFR(storedLang === 'false');
+      if ((userLang !== 'fr') && (userLang !== 'en')) setIsLanguageFR(storedLang === 'false');
     }
   }, []);
 
