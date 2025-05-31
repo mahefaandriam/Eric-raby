@@ -13,13 +13,6 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'All fields are required' });
   }
 
-  //email template
-  const EmailTemplate = () => (
-    <div >
-      
-    </div>
-  );
-
   try {
     const result = await resend.emails.send({
       from: 'connecttalentdev@eric-raby.com', // Use a verified domain or resendmail.com
