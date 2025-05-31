@@ -1,5 +1,5 @@
 import { Resend } from 'resend';
-//import ForwardedMessageEmail from '../src/emails/ForwardedMessageEmail'
+import ForwardedMessageEmail from '../src/emails/ForwardedMessageEmail';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

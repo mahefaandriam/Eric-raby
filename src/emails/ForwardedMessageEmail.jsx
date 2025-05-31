@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function ForwardedMessageEmail({ logoUrl, recipientName, fromName, fromEmail, subject, message }) {
   return (
     <div
