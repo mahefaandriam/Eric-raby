@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Phone, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
@@ -170,7 +170,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             Sent <Check className="w-5 h-5" />
           </span>
         )}
-        {status === 'idle' && t('contact_section.b_submit')}
+        {status === 'idle' && `${t('contact_section.b_submit')}`}
         {status === 'error' && 'Try Again'}
       </button>
         </form>
