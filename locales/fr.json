@@ -265,7 +265,10 @@
     "name_placeholder" : "Votre nom",
     "email_placeholder" : "Votre email",
     "message_placeholder" : "Votre message",
-    "b_submit" : "ENVOYER MESSAGE"},
+    "b_submit_idle" : "ENVOYER MESSAGE",
+    "b_submit_sending" : "ENVOI",
+    "b_submit_sent" : "ENVOYÉ"
+  },
   "footer_section": {
     "home": "Accueil",
     "about": "A propos",

@@ -155,22 +155,22 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           <button
         type="submit"
         disabled={status === 'sending' || status === 'success'}
-        className={`font-medium py-2 px-4 rounded transition-all ${
-          status === 'success' ? 'bg-white text-accent' : 'bg-accent text-white hover:bg-accent/70'
+        className={`font-medium py-2 px-4 transition-all ${
+          status === 'success' ? 'bg-white text-accent border broder-accent' : 'bg-accent border-none text-white hover:bg-accent/70'
         }`}
       >
         {status === 'sending' && (
           <span className="flex items-center justify-center gap-2">
-            Sending
-            <span className="animate-pulse text-sm font-bold">...</span>
+            `${t('contact_section.b_submit_sending')}`
+            <span className="animate-pulse text-xs font-bold">...</span>
           </span>
         )}
         {status === 'success' && (
           <span className="flex items-center justify-center gap-2">
-            Sent <Check className="w-5 h-5" />
+            `${t('contact_section.b_submit_sent')}` <Check className="w-5 h-5" />
           </span>
         )}
-        {status === 'idle' && `${t('contact_section.b_submit')}`}
+        {status === 'idle' && `${t('contact_section.b_submit_idle')}`}
         {status === 'error' && 'Try Again'}
       </button>
         </form>

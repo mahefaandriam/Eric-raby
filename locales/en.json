@@ -264,7 +264,10 @@
     "name_placeholder" : "Your name here",
     "email_placeholder" : "Your email here",
     "message_placeholder" : "Your message here",
-    "b_submit" : "SEND MESSAGE"
+    "b_submit_idle" : "SEND MESSAGE",
+    "b_submit_sending" : "SENDING",
+    "b_submit_sent" : "SENT"
+
   },
   "footer_section": {
      "home": "Home",
