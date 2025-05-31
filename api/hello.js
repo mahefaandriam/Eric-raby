@@ -14,7 +14,11 @@ export default async function handler(req, res) {
   }
 
   //email template
-  
+  const EmailTemplate = () => (
+    <div >
+      
+    </div>
+  );
 
   try {
     const result = await resend.emails.send({
