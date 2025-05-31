@@ -14,26 +14,7 @@ export default async function handler(req, res) {
   }
 
   //email template
-  const EmailTemplate = () => (
-    <div style={{ fontFamily: 'Arial', padding: 20 }}>
-      <img
-        src="https://www.example.com/logo.png"
-        alt="Logo"
-        width="120"
-        style={{ marginBottom: 20 }}
-      />
-      <h2>Bonjour Éric Raby,</h2>
-      <p>Vous avez reçu un nouveau message via votre site web :</p>
-      <p><strong>Expéditeur :</strong> {name} &lt;{email}&gt;</p>
-      <p><strong>Sujet :</strong> New message from ${name} </p>
-      <p><strong>Message :</strong></p>
-      <blockquote>{message}</blockquote>
-      <hr />
-      <p style={{ fontSize: 12, color: '#888' }}>
-        Ce message est confidentiel. Si vous n’êtes pas le destinataire, veuillez le supprimer.
-      </p>
-    </div>
-  );
+  
 
   try {
     const result = await resend.emails.send({
