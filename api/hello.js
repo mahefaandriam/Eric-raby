@@ -31,6 +31,10 @@ export default async function handler(req, res) {
         Vous avez reçu un nouveau message via votre site web : wwww.eric-raby.com
       </p>
 
+      <p style="color: #4b3e2e;">
+        Vous avez reçu un nouveau message via votre site web : wwww.eric-raby.com
+      </p>
+
       <p style="color: #4b3e2e;"><strong>Expéditeur :</strong> ${name} &lt;${email}&gt;</p>
       <p style="color: #4b3e2e;"><strong>Sujet :</strong> 📩 Nouveau message de ${name}</p>
 
@@ -56,7 +60,10 @@ export default async function handler(req, res) {
           </td>
         </tr>
       </table>
-       Message transmis automatiquement depuis votre site web.
+      <p style="color: #4b3e2e;">
+        Message transmis automatiquement depuis votre site web.
+      </p>
+       
     </div>
   </div>
 `;
