@@ -156,11 +156,29 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           >
             {t('contact_section.b_submit')}
           </button>
+           <button
+              type="submit"
+              disabled={status === 'sending' || status === 'success'}
+              className={`bg-accent hover:bg-accent/70 text-white font-medium py-2 px-4 transition-all ${
+                status === 'success' ? 'bg-green-600' : 'bg-blue-600 hover:bg-blue-700'
+              }`}
+            >
+              {status === 'sending' && (
+                <span className="flex items-center justify-center gap-2">
+                  Sending
+                  <span className="animate-pulse text-xl font-bold">...</span>
+                </span>
+              )}
+              {status === 'success' && (
+                <span className="flex items-center justify-center gap-2">
+                  Sent <Check className="w-5 h-5" />
+                </span>
+              )}
+              {status === 'idle' && 'Send Message'}
+              {status === 'error' && 'Try Again'}
+            </button>
         </form>
 
-      {status === 'sending' && <p className="text-accent text-sm">Sending...</p>}
-      {status === 'success' && <p className="text-green-600 text-sm">Message sent!</p>}
-      {status === 'error' && <p className="text-red-600 text-sm">Failed to send.</p>}
       </motion.div>
     </section>
   );
