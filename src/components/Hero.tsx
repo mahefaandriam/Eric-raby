@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({
   subtitle,
   image,
   ctaText = 'Réservez Maintenant',
-  ctaLink = '/booking',
+  ctaLink = '#',
   overlay = false,
   height = 'h-95 md:h-143'
 }) => {
