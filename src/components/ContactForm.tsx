@@ -170,7 +170,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             Sent <Check className="w-5 h-5" />
           </span>
         )}
-        {status === 'idle' && $t('contact_section.b_submit')}
+        {status === 'idle' && t('contact_section.b_submit')}
         {status === 'error' && 'Try Again'}
       </button>
         </form>
