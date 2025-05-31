@@ -155,14 +155,14 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           <button
         type="submit"
         disabled={status === 'sending' || status === 'success'}
-        className={`w-full p-2 text-white rounded transition-all ${
-          status === 'success' ? 'bg-green-600' : 'bg-blue-600 hover:bg-blue-700'
+        className={`font-medium py-2 px-4 rounded transition-all ${
+          status === 'success' ? 'bg-white text-accent' : 'bg-accent text-white hover:bg-accent/70'
         }`}
       >
         {status === 'sending' && (
           <span className="flex items-center justify-center gap-2">
             Sending
-            <span className="animate-pulse text-xl font-bold">...</span>
+            <span className="animate-pulse text-sm font-bold">...</span>
           </span>
         )}
         {status === 'success' && (
