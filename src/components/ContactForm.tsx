@@ -149,13 +149,6 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             className="w-full p-3 border border-gray-300 bg-white text-accent"
             required
           />
-
-          <button
-            type="submit"
-            className="bg-accent hover:bg-accent/70 text-white font-medium py-2 px-4 transition"
-          >
-            {t('contact_section.b_submit')}
-          </button>
            <button
               type="submit"
               disabled={status === 'sending' || status === 'success'}
