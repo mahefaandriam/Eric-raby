@@ -19,7 +19,12 @@ export default async function handler(req, res) {
       from: 'connecttalentdev@eric-raby.com', // Use a verified domain or resendmail.com
       to: ['fenoandriams@gmail.com'],                 // Your email to receive the form
       subject: `New message from ${name}`,
-      text: `From: ${name} (${email})\n\n${message}`,
+      react: React.createElement('h1',
+          { className: 'greeting' },
+          'Hello ',
+          createElement('i', null, name),
+          '. Welcome!'
+      ),
     });
 
     return res.status(200).json({ success: true, data: result });
