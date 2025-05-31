@@ -15,27 +15,57 @@ export default async function handler(req, res) {
   }
 
   const htmlContent = `
-    <div style="font-family: Arial, sans-serif; padding: 20px;">
-      <img src="https://www.example.com/logo.png" alt="Logo" width="120" style="margin-bottom: 20px;" />
-      <h2>Bonjour Éric Raby,</h2>
-      <p>Vous avez reçu un nouveau message via votre site web :</p>
-      <p><strong>Expéditeur :</strong> ${name} &lt;${email}&gt;</p>
-      <p><strong>Sujet :</strong> ${name}</p>
-      <p><strong>Message :</strong></p>
-      <blockquote style="background-color:#f9f9f9;padding:10px;border-left:4px solid #ccc;">
+  <div style="font-family: Arial, sans-serif; background-color: #fdf6e3; padding: 30px;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+      
+      <img
+        src="https://www.eric-raby.com/qwam-logo.png"
+        alt="Logo"
+        width="120"
+        style="margin-bottom: 20px; display: block;"
+      />
+
+      <h2 style="color: #5b4636; margin-top: 0;">Bonjour Éric Raby,</h2>
+
+      <p style="color: #4b3e2e;">
+        Vous avez reçu un nouveau message via votre site web :
+      </p>
+
+      <p style="color: #4b3e2e;"><strong>Expéditeur :</strong> ${name} &lt;${email}&gt;</p>
+      <p style="color: #4b3e2e;"><strong>Sujet :</strong> 📩 Nouveau message de ${name}</p>
+
+      <p style="color: #4b3e2e;"><strong>Message :</strong></p>
+      <blockquote style="background-color: #fefae0; padding: 12px 16px; border-left: 4px solid #c9b17b; margin: 10px 0;">
         ${message.replace(/\n/g, '<br/>')}
       </blockquote>
-      <hr />
-      <p style="font-size: 12px; color: #888;">
-        Ce message est confidentiel. Si vous n’êtes pas le destinataire, veuillez le supprimer.
-      </p>
+
+      <hr style="border: none; border-top: 1px solid #e6dec7; margin: 24px 0;" />
+
+      <!-- Two-column footer -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="font-size: 12px; color: #a28c6e;">
+        <tr>
+          <td width="50%" valign="top" style="padding-right: 10px;">
+            <strong>Confidentialité</strong><br/>
+            Ce message est confidentiel. Si vous n’êtes pas le destinataire, veuillez le supprimer.
+          </td>
+          <td width="50%" valign="top" style="padding-left: 10px;">
+            <strong>Contact</strong><br/>
+            Eric Raby<br/>
+            contact@eric-raby.com<br/>
+            <a href="https://www.eric-raby.com" style="color: #a28c6e;">www.eric-raby.com</a>
+          </td>
+        </tr>
+      </table>
+
     </div>
-  `;
+  </div>
+`;
+
   try {
     const result = await resend.emails.send({
       from: 'connecttalentdev@eric-raby.com', // Use a verified domain or resendmail.com
       to: ['fenoandriams@gmail.com'],                 // Your email to receive the form
-     subject: `📩 Nouveau message de ${name}`,
+      subject: `📩 Nouveau message de ${name}`,
       html: htmlContent,
     });
 
