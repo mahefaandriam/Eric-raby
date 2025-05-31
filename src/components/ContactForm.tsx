@@ -22,7 +22,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
 
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState('idle');
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
     setForm({
@@ -70,6 +70,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
         console.log(res.formData);
         setStatus('success');
         setForm({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus('idle'), 3000);
       } else {
         throw new Error();
       }
@@ -149,27 +150,29 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             className="w-full p-3 border border-gray-300 bg-white text-accent"
             required
           />
-           <button
-              type="submit"
-              disabled={status === 'sending' || status === 'success'}
-              className={`bg-accent hover:bg-accent/70 text-white font-medium py-2 px-4 transition-all ${
-                status === 'success' ? 'bg-green-600' : 'bg-blue-600 hover:bg-blue-700'
-              }`}
-            >
-              {status === 'sending' && (
-                <span className="flex items-center justify-center gap-2">
-                  Sending
-                  <span className="animate-pulse text-xl font-bold">...</span>
-                </span>
-              )}
-              {status === 'success' && (
-                <span className="flex items-center justify-center gap-2">
-                  Sent <Check className="w-5 h-5" />
-                </span>
-              )}
-              {status === 'idle' && 'Send Message'}
-              {status === 'error' && 'Try Again'}
-            </button>
+
+          
+          <button
+        type="submit"
+        disabled={status === 'sending' || status === 'success'}
+        className={`w-full p-2 text-white rounded transition-all ${
+          status === 'success' ? 'bg-green-600' : 'bg-blue-600 hover:bg-blue-700'
+        }`}
+      >
+        {status === 'sending' && (
+          <span className="flex items-center justify-center gap-2">
+            Sending
+            <span className="animate-pulse text-xl font-bold">...</span>
+          </span>
+        )}
+        {status === 'success' && (
+          <span className="flex items-center justify-center gap-2">
+            Sent <Check className="w-5 h-5" />
+          </span>
+        )}
+        {status === 'idle' && $t('contact_section.b_submit')}
+        {status === 'error' && 'Try Again'}
+      </button>
         </form>
 
       </motion.div>
