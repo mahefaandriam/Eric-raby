@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import ForwardedMessageEmail from '../src/emails/ForwardedMessageEmail'
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,10 +16,17 @@ export default async function handler(req, res) {
 
   try {
     const result = await resend.emails.send({
-      from: 'connecttalent@eric-raby.com', // Use a verified domain or resendmail.com
-      to: ['fenoandriams@gmail.com'],                 // Your email to receive the form
-      subject: `New message from ${name}`,
-      text: `From: ${name} (${email})\n\n${message}`,
+      from: 'connecttalentdev@eric-raby.com',
+      to: ['fenoandriams@gmail.com'],
+      subject: `📩 Nouveau message de ${name}`, 
+      react: ForwardedMessageEmail({
+        logoUrl: '/author.jpg',
+        recipientName: 'Éric Raby',
+        name,
+        email,
+        subject,
+        message,
+      }),
     });
 
     return res.status(200).json({ success: true, data: result });
