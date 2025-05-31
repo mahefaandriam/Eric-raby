@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       <h2 style="color: #5b4636; margin-top: 0;">Bonjour Éric Raby,</h2>
 
       <p style="color: #4b3e2e;">
-        Vous avez reçu un nouveau message via votre site web :
+        Vous avez reçu un nouveau message via votre site web : wwww.eric-raby.com
       </p>
 
       <p style="color: #4b3e2e;"><strong>Expéditeur :</strong> ${name} &lt;${email}&gt;</p>
@@ -46,17 +46,17 @@ export default async function handler(req, res) {
         <tr>
           <td width="50%" valign="top" style="padding-right: 10px;">
             <strong>Confidentialité</strong><br/>
-            Ce message est confidentiel. Si vous n’êtes pas le destinataire, veuillez le supprimer.
+            Ce message vous est transmis à titre confidentiel. Il peut contenir des informations sensibles provenant d’un tiers. Merci de ne pas le partager sans autorisation.       
           </td>
           <td width="50%" valign="top" style="padding-left: 10px;">
             <strong>Contact</strong><br/>
             Eric Raby<br/>
-            contact@eric-raby.com<br/>
+            eric.raby@hotmail.fr<br/>
             <a href="https://www.eric-raby.com" style="color: #a28c6e;">www.eric-raby.com</a>
           </td>
         </tr>
       </table>
-
+       Message transmis automatiquement depuis votre site web.
     </div>
   </div>
 `;
