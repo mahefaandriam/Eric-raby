@@ -68,7 +68,7 @@ export default function QAAccordion() {
               </div>           
             </div>
               {post.reponses.map((reponse, r_index) => ( 
-                <div key={r_index} className='whitespace-pre-line'>
+                <div key={r_index} className='whitespace-pre-line text-primary'>
                   <div><span className={`flex justify-self-center font-bold  text-primary text-lg py-4 whitespace-pre-line`}>{reponse.title}</span></div>
                   {reponse.paragraphs.map((_, pr_index) => ( 
                       <div key={pr_index} className='py-2'>
