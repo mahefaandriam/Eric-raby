@@ -1,5 +1,6 @@
 {
     "author" : "Eric Raby",
+    "job": "Coach en Développement Personnel & Responsable Commercial",
     "header": {
         "home": "Accueil",
         "about": "A propos",
@@ -233,31 +234,414 @@
   },
   "blog_answer_section": {
     "title" : "BLOG",
-    "subtitle" :  "Aucune question ne reste sans réponse...",
-    "1" : {
-      "question" : "Pourquoi travailler son mental change tout (même en dehors du sport ?" ,
-      "reponse" : "Ce que les athlètes de haut niveau nous apprennent sur la résilience, la concentration et la motivation."
-    },
-    "2" : {
-      "question" : "“Je n’arrive pas à dire ce que je pense” – Comprendre le blocage de la communication" ,
-      "reponse" : "Pourquoi on a du mal à s’exprimer… et comment s’en libérer."
-    },
-    "3" : {
-      "question" : "La procrastination n’est pas de la paresse (et comment la dépasser)" ,
-      "reponse" : "Stratégies concrètes pour enfin passer à l’action."
-    },
-    "4" : {
-      "question" : "Comment bien revenir après une blessure (mentalement et physiquement)" ,
-      "reponse" : "L’erreur que font 80% des jeunes sportifs… et comment s’y préparer autrement."
-    },
-    "5" : {
-      "question" : " Nutrition et bien-être mental : le rôle oublié des omégas et polyphénols" ,
-      "reponse" : "Pourquoi bien manger soutient aussi ton cerveau et ton humeur."
-    },
-    "6" : {
-      "question" : "Ados & relations sociales : comment aider un jeune à sortir de l’isolement" ,
-      "reponse" : "Des outils concrets pour parents, éducateurs et coachs."
-    }
+    "subtitle" :  "Des histoires, des idées, et de l’inspiration pour nourrir votre curiosité, élargir vos horizons et vous accompagner dans chaque étape de votre voyage.",
+    "posts" : [
+      {
+        "seo" :
+          {
+            "title" : "",
+            "description" : "",
+            "ogImage" : "",
+            "keywordsKey" : ""
+          }
+        ,
+        "question" : "Identifier et comprendre les émotions : une clé pour mieux se connaître" ,
+        "reponses" : [
+          {
+            "title" : "",
+            "paragraphs" : [
+                "Les émotions font partie intégrante de notre quotidien. Elles surgissent parfois sans prévenir, influencent nos décisions, nos relations, notre énergie. Pourtant, nous avons rarement appris à les <g>reconnaître</g>, les <g>accueillir</g> et les <g>comprendre</g>.",
+                "Trop souvent, nous les jugeons, les fuyons ou les étouffons, surtout lorsqu’elles sont inconfortables. Et pourtant, <g>toute émotion a une fonction</g>. Elle cherche à nous informer, pas à nous submerger.",
+                "Apprendre à identifier et comprendre ses émotions, c’est se donner la chance de mieux se connaître, de mieux se réguler… et de mieux vivre avec soi-même et avec les autres."
+            ]
+          },
+          {
+            "title" : "Les émotions ne sont pas des problèmes à régler",
+            "paragraphs" : [
+                "Tristesse, colère, peur, joie, frustration, culpabilité… Chaque émotion est un <g>signal</g>, un messager qui vient nous dire quelque chose sur notre vécu, nos besoins, nos valeurs. Lorsqu’on les écoute, elles deviennent des alliées. Lorsqu’on les ignore, elles cherchent à se faire entendre autrement — souvent plus fort, ou plus longtemps.",
+                "Ignorer une émotion, c’est comme ignorer une douleur physique : cela n’efface pas le message, cela le prolonge."
+            ]
+          },
+          {
+            "title" : "Identifier ce qui se passe vraiment",
+            "paragraphs" : [
+                "La première étape consiste à <g>mettre un mot sur ce que l’on ressent</g>. Et cela demande parfois un peu de pratique.",
+                "Demandez-vous simplement :",
+                "   • Qu’est-ce que je ressens, là, maintenant ?",
+                "   • Est-ce que je ressens plutôt de la tristesse… ou de la fatigue ? De la colère… ou une frustration plus subtile ?",
+                "   • Où est-ce que je sens cela dans mon corps ? ",
+                "Nommer une émotion permet de la <g>distinguer de la confusion mentale</g>, de la reconnaître comme un signal utile et non comme une menace."
+            ]
+          },
+          {
+            "title" : "Comprendre le besoin derrière l’émotion",
+            "paragraphs" : [
+                "Chaque émotion pointe vers un besoin. Voici quelques exemples simples : ",
+                "   • La colère signale souvent un besoin de respect ou de justice.",
+                "   • La peur révèle un besoin de sécurité.",
+                "   • La tristesse indique une perte, un besoin de réconfort ou de soutien.",
+                "   • La joie souligne que quelque chose est aligné avec nos valeurs ou nos désirs. ",
+                "En identifiant le besoin sous-jacent, on peut sortir du flot émotionnel et <g>revenir à une posture active</g> : \"Qu’est-ce que je peux faire pour prendre soin de ce besoin ?\""
+            ]
+          },
+          {
+            "title" : "Accueillir sans se juger",
+            "paragraphs" : [
+                "Il n’y a pas d’émotion « bonne » ou « mauvaise ». Elles sont toutes valides, même si elles sont parfois désagréables. Le vrai travail consiste à <g> accueillir ce qui est là </g> , sans surinterpréter, sans dramatiser, sans se critiquer.",
+                "Une phrase simple à se dire : « Ce que je ressens est légitime. Je peux écouter cette émotion sans m’y noyer. »"
+            ]
+          },
+          {
+            "title" : "Pourquoi c’est si transformateur",
+            "paragraphs" : [
+                "Lorsque l’on apprend à identifier et comprendre ses émotions : ",
+                "   • on évite les réactions impulsives ou excessives;",
+                "   • on gagne en clarté dans les relations;",
+                "   • on renforce son estime de soi;",
+                "   • on développe une régulation émotionnelle plus stable et plus saine.",
+                "C’est <g>une compétence émotionnelle clé</g>, au cœur de l’intelligence relationnelle et du bien-être personnel."
+            ]
+          },
+          {
+            "title" : "Vous souhaitez mieux comprendre vos émotions et apprendre à vivre avec elles plus sereinement ?",
+            "paragraphs" : [
+                "<g>Je vous accompagne</g> avec des outils concrets et une approche bienveillante pour vous aider à mettre du sens, du calme et de la clarté dans votre monde intérieur."
+            ]
+          }
+        ]
+      },
+      {
+        "seo" :
+          {
+            "title" : "",
+            "description" : "",
+            "ogImage" : "",
+            "keywordsKey" : ""
+          }
+        ,
+        "question" : "Asservité : communiquer avec clarté et respect" ,
+        "reponses": [
+          {
+            "title": "",
+            "paragraphs": [
+              "Dans un monde où les échanges sont de plus en plus rapides et parfois tendus, bien communiquer est un véritable défi. Trop souvent, on oscille entre deux extrêmes : se taire pour éviter les conflits, ou s’imposer au risque de blesser. Pourtant, il existe une autre voie : l’<g>assertivité</g>.",
+              "Aussi appelée « asservité », cette posture relationnelle permet d’exprimer ce que l’on pense et ressent de façon claire, directe et respectueuse. Elle est au cœur d’une communication authentique et équilibrée — autant dans la vie professionnelle que personnelle."
+            ]
+          },
+          {
+            "title": "Affirmer sans écraser, écouter sans s’effacer",
+            "paragraphs": [
+              "Être <g>assertif</g>, c’est affirmer sa position sans agressivité et écouter celle de l’autre sans se soumettre. C’est reconnaître sa propre valeur tout en respectant celle de l’interlocuteur. Cela peut se traduire simplement par le fait de dire non sans culpabilité, formuler une demande sans tourner autour du pot, ou exprimer un désaccord sans jugement.",
+              "Loin d’être une technique de communication, l’assertivité est d’abord une posture intérieure. Elle repose sur la confiance en soi, la clarté dans l’intention, et le respect mutuel."
+            ]
+          },
+          {
+            "title": "La clarté comme marque de respect",
+            "paragraphs": [
+              "Une communication claire est souvent plus bienveillante qu’on ne le pense. Être précis dans ses mots, exprimer ses besoins de façon simple, sans reproche ni sous-entendu, permet d’éviter les malentendus et de désamorcer bien des tensions.",
+              "Par exemple, au lieu de dire :« Tu ne fais jamais attention à moi. »on peut dire :« J’aimerais que tu sois pleinement présent quand on discute. J’en ai besoin pour me sentir écouté. »",
+              "Ce type de message favorise un échange constructif, plutôt qu’un rapport de force."
+            ]
+          },
+          {
+            "title": "Une écoute véritable",
+            "paragraphs": [
+              "L’assertivité implique aussi de savoir écouter — non pas pour répondre, mais pour comprendre. Cela suppose de laisser à l’autre l’espace de s’exprimer, de ne pas interrompre, et d’accueillir ce qui est dit, même si on n’est pas d’accord.",
+              "Écouter avec respect, c’est reconnaître l’autre dans sa réalité, et lui permettre de se sentir entendu. C’est souvent là que naît la confiance."
+            ]
+          },
+          {
+            "title": "Des bénéfices concrets",
+            "paragraphs": [
+              "Adopter une posture <g>assertive</g> transforme profondément nos <g>relations</g>. Cela permet :",
+              "   • de poser ses limites sans blesser",
+              "   • d’éviter les conflits inutiles",
+              "   • de mieux se faire comprendre",
+              "   • de renforcer la confiance mutuelle",
+              "   • d’améliorer le dialogue dans les équipes, couples, familles",
+              "C’est un <g>véritable levier</g> pour <g>apaiser les tensions</g>, <g>encourager la coopération</g> et <g>cultiver un climat sain</g>."
+            ]
+          },
+          {
+            "title": "En résumé",
+            "paragraphs": [
+              "L’<g>assertivité</g> ne s’improvise pas. Elle se développe avec le temps, la conscience de soi et parfois, un accompagnement adapté. Mais les bénéfices qu’elle apporte en valent largement l’effort.",
+              "Apprendre à dire les choses avec <g>clarté</g>, tout en maintenant <g>le respect comme fil conducteur</g>, c’est choisir de communiquer autrement — avec plus de justesse, d’écoute, et d’authenticité."
+            ]
+          },
+          {
+            "title": "Vous souhaitez explorer l’assertivité pour vous-même, votre équipe ou votre organisation?",
+            "paragraphs": [
+              "<g>Je vous invite à me contacter<g> pour en discuter ou découvrir mes accompagnements en communication consciente et leadership relationnel."
+            ]
+          }
+        ]
+      },
+      {
+        "seo" :
+          {
+            "title" : "Développer ses compétences sociales : la clé du bien-être et de la performance au travail",
+            "description" : "Découvrez pourquoi les compétences sociales comme l’écoute, la gestion des émotions et la communication bienveillante sont devenues essentielles dans le monde professionnel.",
+            "ogImage" : "",
+            "keywordsKey" : ""
+          }
+        ,
+        "question" : "Développer les compétences sociales dans la vie quotidienne du travail",
+        "reponses": [
+          {
+            "title": "",
+            "paragraphs": [
+              "Avec les années, j’ai eu la chance d’accompagner de nombreuses personnes dans leur développement personnel et professionnel. Et s’il y a une chose qui revient sans cesse dans les défis qu’on me partage, c’est <g>difficulté de bien communiquer</g>, <g>collaborer</g> et <g>se comprendre</g> au travail.",
+              "Trop souvent, on pense que c’est notre expertise ou nos connaissances qui font toute la différence dans notre réussite. Et oui, ces compétences sont importantes. Mais dans la vraie vie, au quotidien, ce qui fait la différence, ce sont nos <g>compétences sociales</g>."
+            ]
+          },
+          {
+            "title": "Qu’entend-on par compétences sociales?",
+            "paragraphs": [
+              "Ce sont toutes ces habiletés humaines qui nous permettent de bien fonctionner avec les autres. Ça va de l’écoute, à la gestion des émotions, à la capacité de s’adapter, de coopérer ou même de résoudre un conflit avec calme et respect.",
+              "Ce sont des aptitudes qu’on utilise tous les jours, parfois sans même s’en rendre compte, mais qui ont un impact énorme sur notre qualité de vie au travail."
+            ]
+          },
+          {
+            "title": "Pourquoi c’est essentiel, aujourd’hui plus que jamais",
+            "paragraphs": [
+              "Dans un monde où les équipes sont de plus en plus diversifiées, où le télétravail transforme nos échanges, et où la pression est souvent élevée, <g>nos relations professionnelles</g> deviennent un facteur clé de bien-être et de performance.",
+              "Un climat de travail sain, ça ne se construit pas uniquement avec des politiques RH. Ça commence par nous. Par notre façon de parler à un collègue, de réagir à une critique, de gérer un malentendu ou simplement d’être attentif aux autres."
+            ]
+          },
+          {
+            "title": "Comment développer ces compétences dans le quotidien?",
+            "paragraphs": [
+              "Voici ce que je propose souvent en coaching, et que j’applique moi-même dans mon travail :",
+              "<l>1. Écoutez vraiment</l>",
+              "Pas juste entendre. Écouter avec attention, sans couper la parole, sans préparer déjà votre réponse. Juste être là. L’écoute active, c’est un super pouvoir en entreprise.",
+              "<l>2. Soyez conscient de vos émotions</l>",
+              "On ne peut pas contrôler ce qu’on ressent, mais on peut apprendre à le reconnaître, à le nommer, et à ne pas le projeter sur les autres. Ça change tout dans les échanges.",
+              "<l>3. Exprimez-vous avec clarté et bienveillance</l>",
+              "Dire ce qu’on pense, oui. Mais le dire de façon à être compris, sans blesser. Un bon message, c’est à la fois honnête et respectueux.",
+              "<l>4. Apprenez à collaborer au lieu de performer seul</l>",
+              "Le \"moi contre les autres\", ça ne marche pas. Misez sur le \"nous\". Célébrez les succès collectifs. Soyez un joueur d’équipe, pas juste un bon joueur.",
+              "<l>5. Soyez curieux des autres</l>",
+              "Chaque personne a une histoire, une vision, une façon de faire. Plus on est curieux, plus on devient tolérant et ouvert. C’est une richesse, pas une menace."
+            ]
+          },          
+          {
+            "title": "En conclusion",
+            "paragraphs": [
+              "Je le dis souvent : <g>le savoir-être est aussi important que le savoir-faire</g>. Et la bonne nouvelle, c’est que ces compétences-là, ça s’apprend, ça se pratique, ça se renforce.",
+              "Si vous sentez que vous avez besoin d’un coup de pouce pour mieux gérer vos relations de travail, améliorer votre communication ou retrouver du plaisir à collaborer avec les autres, je suis là pour vous accompagner.",
+              "N’hésitez pas à me contacter — on en discute ensemble."
+            ]
+          },
+          {
+            "title": "Signature",
+            "paragraphs": [
+              "<g>Éric Raby</g> – Coach Expert pour Ado et Familles"
+            ]
+          }
+        ]
+      },
+      {
+        "seo" :[
+          {
+            "title" : "Apprendre à gérer l’inquiétude - Conseils et accompagnement",
+            "description" : "Découvrez comment apprivoiser l’inquiétude et retrouver calme et clarté dans votre vie personnelle et professionnelle.",
+            "ogImage" : "",
+            "keywordsKey" : "inquiétude, gestion du stress, développement personnel, bien-être, coaching"
+          }
+        ],
+        "question": "Gérer l’inquiétude : retrouver de l’espace intérieur",
+        "reponses": [
+          {
+            "title": "",
+            "paragraphs": [
+              "L’inquiétude fait partie de l’expérience humaine. Elle se manifeste dans le corps, dans l’esprit, parfois sans prévenir, parfois sans raison claire. Elle peut être légère et passagère, mais elle peut aussi devenir envahissante, nous bloquer, nous empêcher d’avancer ou de bien dormir.",
+              "Plutôt que de chercher à l’éliminer à tout prix, il est possible d’apprendre <g>à mieux vivre avec elle</g>, à l’apprivoiser, et surtout à ne plus la laisser piloter nos décisions."
+            ]
+          },
+          {
+            "title": "L’inquiétude : un signal, pas une menace",
+            "paragraphs": [
+              "Souvent, nous considérons l’inquiétude comme un problème à éliminer. Mais elle est d’abord <g>un mécanisme naturel de protection</g>. C’est une alerte du système nerveux, une tentative (parfois maladroite) de nous préparer au danger ou à l’incertitude.",
+              "Le problème, ce n’est pas l’inquiétude en soi. C’est quand elle devient <g>chronique</g>, <g>disproportionnée</g>, ou <g>paralysante</g>. Quand elle se transforme en ruminations, en scénarios catastrophes, en tension constante.",
+              "La clé n’est pas de faire taire l’inquiétude, mais de <g>changer la relation que l’on entretient avec elle</g>."
+            ]
+          },
+          {
+            "title": "Accueillir plutôt que fuir",
+            "paragraphs": [
+              "La première étape consiste souvent à <g>reconnaître</g> l’inquiétude au lieu de vouloir la repousser. La nommer, l’observer, la ressentir dans le corps. Prendre un moment pour se dire : <t>« Je suis inquiet en ce moment. Et c’est OK. »</t>",
+              "Accueillir ne veut pas dire se résigner. C’est simplement cesser de lutter contre ce qui est déjà là. Cette posture d’accueil crée un premier <g>espace intérieur</g> : un peu de recul, un peu de liberté par rapport à ce qui nous agite."
+            ]
+          },
+          {
+            "title": "Faire la part des choses",
+            "paragraphs": [
+              "Une autre manière de désamorcer l’inquiétude est de <g>lui donner des contours</g>. Posez-vous ces quelques questions simples :",
+              "   • De quoi ai-je réellement peur ?",
+              "   • Est-ce que ce scénario est probable, ou simplement possible ?",
+              "   • Qu’est-ce qui dépend de moi, ici et maintenant ?",
+              "   • Quelle est la première petite action que je peux poser ?",
+              "L’inquiétude se nourrit souvent du flou et du « tout ou rien ». Clarifier les enjeux, ramener l’attention au présent et à ce qui est concret permet de regagner du pouvoir sur la situation."
+            ]
+          },
+          {
+            "title": "Apprendre à revenir dans le corps",
+            "paragraphs": [
+              "L’nquiétude est une activité mentale… qui s’ancre dans le corps. Elle tend les muscles, accélère le souffle, serre la poitrine. Pour retrouver un apaisement réel, il est essentiel de <g>ramener le corps dans l’équation</g> : respiration lente, mouvement doux, pauses conscientes.",
+              "Quelques respirations profondes, une courte marche, ou simplement porter attention à ses appuis peuvent suffire à <g>ramener un sentiment de stabilité</g>."
+            ]
+          },
+          {
+            "title": "Ce que l’inquiétude vient révéler",
+            "paragraphs": [
+              "Derrière nos inquiétudes se cachent souvent des choses importantes : nos valeurs, nos liens, nos limites, nos besoins. Les écouter peut nous en apprendre beaucoup sur nous-mêmes.",
+              "Gérer l’inquiétude, ce n’est pas devenir insensible, c’est apprendre à <g>rester vivant au milieu de l’incertitude</g>. C’est développer une forme de souplesse intérieure qui nous permet de traverser les moments difficiles avec un peu plus de solidité, et un peu moins de solitude."
+            ]
+          },
+          {
+            "title": "Vous sentez que l’inquiétude prend trop de place dans votre vie ou votre travail?",
+            "paragraphs": [
+              "<g>Je vous accompagne</g> à retrouver du calme, de la clarté, et à renforcer votre capacité à faire face avec confiance."
+            ]
+          }
+          ]
+      },
+      {
+        "seo" :
+          {
+            "title" : "Anxiété sociale : retrouver confiance dans les relations humaines",
+            "description" : "L’anxiété sociale peut rendre les relations difficiles, mais elle n’est pas une fatalité. Découvrez des outils concrets pour retrouver confiance, authenticité et sérénité dans vos interactions.",
+            "ogImage" : "",
+            "keywordsKey" : "anxiété sociale,confiance en soi,relation aux autres,peur du jugement,exposition graduée,authenticité,écoute bienveillante,stress social,développement personnel"
+          }
+        ,
+        "question" : "Surmonter l’anxiété en situation sociale : retrouver sa place, tranquillement" ,
+        "reponses": [
+          {
+            "title": "",
+            "paragraphs": [
+              "Les situations sociales peuvent être sources de plaisir, de connexion… ou de malaise. Pour certaines personnes, parler en public, rencontrer de nouvelles personnes, ou simplement participer à une réunion peut devenir une véritable épreuve. On anticipe, on stresse, on s’observe, on s’inquiète de ce que les autres vont penser.",
+              "Cette forme d’inconfort porte un nom : <g>l’anxiété sociale</g>. Bonne nouvelle : elle n’est ni une fatalité, ni une faiblesse. C’est un mécanisme compréhensible, et surtout, <g>il est possible de la traverser et de la transformer.</g>"
+            ]
+          },
+          {
+            "title": "Ce que cache l’anxiété sociale",
+            "paragraphs": [
+              "L’anxiété sociale n’est pas un « <g>manque de confiance</g> » généralisé. C’est souvent une <g>peur du jugement</g>, du <g>rejet</g> ou de <g>l’humiliation</g>.",
+              "Elle se manifeste par des pensées comme :",
+              "   • « Je vais dire quelque chose de bizarre. »\n    • « Ils vont voir que je suis mal à l’aise. »\n   • « Je n’ai rien d’intéressant à dire. »",
+              "Ces pensées ne sont pas forcément rationnelles, mais elles génèrent des réactions bien réelles : cœur qui bat plus vite, mains moites, voix hésitante, envie de fuir.",
+              "Avant de chercher à « vaincre » cette anxiété, il est important de <g>comprendre ce qu’elle cherche à protéger</g> : souvent, un <g>désir profond</g> d’être <g>accepté</g>, <g>respecté</g>, <g>reconnu</g>."
+            ]
+          },
+          {
+            "title": "L’ennemi n’est pas la timidité",
+            "paragraphs": [
+              "La société valorise les personnalités extraverties, mais être à l’aise en public n’est pas un gage de profondeur relationnelle. Il ne s’agit pas ici de devenir un grand orateur, mais de <g>retrouver un sentiment de sécurité en présence des autres</g>, pour pouvoir être soi-même.",
+              "Il ne s’agit pas non plus d’éteindre toute <g>nervosité</g>, mais de ne plus être <g>dominé</g> par elle."
+            ]
+          },
+          {
+            "title": "Quelques repères concrets",
+            "paragraphs": [
+              "Voici quelques pistes simples et accessibles pour commencer à mieux vivre ces moments :",
+              "<l>1. Ramener l’attention à l’extérieur</l>",
+              "L’anxiété sociale nous enferme dans une boucle d’auto-observation. Essayez de tourner votre attention vers l’autre : son visage, sa voix, ses gestes. Cela vous sort du mental et vous ramène au présent.",
+              "<l>2. Redéfinir la performance</l>",
+              "Vous n’avez pas à « briller » ou à impressionner. Votre seule mission est d’être présent et sincère. L’authenticité crée beaucoup plus de lien que la perfection.",
+              "<l>3. Pratiquer l’exposition graduée</l>",
+              "Commencez par des interactions courtes et sécurisantes. Un bonjour à un voisin, une question posée dans une réunion, un appel passé plutôt qu’un texto. Le progrès vient avec l’expérience, pas avec la théorie.",
+              "<l>4. Apaiser le corps</l>",
+              "Respirer lentement, bouger un peu avant une situation stressante, poser les pieds au sol… Ce sont des gestes simples qui signalent à votre système nerveux qu’il n’y a pas de danger immédiat."
+            ]
+          },
+          {
+            "title": "Une nouvelle relation avec soi-même",
+            "paragraphs": [
+              "Apprendre à gérer l’anxiété sociale, ce n’est pas simplement « mieux fonctionner ». C’est aussi <g>développer une relation plus douce et plus solide avec soi-même</g>. Apprendre à se parler avec patience, à se rassurer intérieurement, à ne plus se juger pour sa nervosité.",
+              "Ce travail peut être profondément transformateur, car il touche à notre manière d’entrer en lien — non seulement avec les autres, mais avec nous-mêmes."
+            ]
+          },
+          {
+            "title": "Vous souhaitez retrouver plus de liberté dans vos interactions sociales ?",
+            "paragraphs": [
+              "<g>Je vous accompagne</g> avec des outils concrets, une écoute bienveillante et un cadre sécurisant pour dépasser l’anxiété sociale à votre rythme."
+            ]
+          }
+        ]
+      },
+      {
+        "seo" :
+          {
+            "title" : "Reprendre le pouvoir sur ses pensées négatives",
+            "description" : "Nos pensées automatiques influencent notre quotidien. Découvrez comment les identifier, les comprendre et les transformer pour cultiver un mental plus apaisé et bienveillant.",
+            "ogImage" : "",
+            "keywordsKey" : "pensées négatives, discours intérieur, confiance en soi, auto-sabotage, gestion des émotions, santé mentale, pleine conscience, développement personnel, transformation intérieure"
+          }
+        ,
+        "question" : "Transformer les pensées négatives : reprendre le pouvoir sur son dialogue intérieur" ,
+        "reponses": [
+          {
+            "title": "",
+            "paragraphs": [
+              "Nous avons tous des pensées qui tournent en boucle. Certaines nous soutiennent, d’autres nous freinent. Lorsqu’elles deviennent répétitives, critiques, défaitistes ou culpabilisantes, ces pensées finissent par colorer notre vision du monde, des autres… et surtout de nous-mêmes.",
+              "Ces <g>pensées négatives automatiques</g>, souvent invisibles, influencent nos émotions, nos comportements, et nos décisions. Mais bonne nouvelle : il est <g>possible d’apprendre à les reconnaître, les apprivoiser et les transformer</g>."
+            ]
+          },
+          {
+            "title": "Ce que nos pensées racontent vraiment",
+            "paragraphs": [
+              "Une pensée n’est pas une vérité. C’est un reflet de notre état intérieur, de nos expériences passées, de nos peurs, de nos habitudes mentales. Lorsqu’une voix intérieure dit : « Je ne vais pas y arriver. » « Je ne suis pas assez… » « Ça va encore mal finir. » … ce n’est pas forcément la réalité, mais cela devient notre réalité si nous y croyons sans recul.",
+              "Nos pensées négatives ne sont pas « mauvaises ». Elles ont souvent une fonction : nous protéger, nous alerter, nous pousser à faire mieux. Le problème, c’est quand elles deviennent envahissantes ou rigides."
+            ]
+          },
+          {
+            "title": "Identifier les pensées parasites",
+            "paragraphs": [
+              "La première étape pour les transformer, c’est de les <g>remarquer consciemment</g>. Cela peut se faire simplement :",
+              "   • en notant ce que l’on se dit intérieurement dans les moments de stress ou de doute;",
+              "   • en prêtant attention à ce qui revient souvent (les mêmes formules, les mêmes scénarios);",
+              "   • en observant leur impact : qu’est-ce que je ressens quand je pense cela ?",
+              "Ce travail d’observation permet de sortir du <g>pilotage automatique</g> et de créer un espace pour choisir une autre façon de penser."
+            ]
+          },
+          {
+            "title": "Remettre en question avec bienveillance",
+            "paragraphs": [
+              "Une fois identifiées, ces pensées peuvent être <g>questionnées</g>, non pas dans une logique de combat, mais d’ouverture :",
+              "   • Est-ce que cette pensée est 100 % vraie ?",
+              "   • Est-ce qu’elle m’aide ou me freine ?",
+              "   • Quelle serait une autre manière de voir cette situation ?",
+              "On ne cherche pas à « penser positif » de manière forcée, mais à <g>introduire plus de nuance, de souplesse et de compassion</g> dans notre discours intérieur."
+            ]
+          },
+          {
+            "title": "Cultiver un nouveau langage intérieur",
+            "paragraphs": [
+              "Transformer les pensées négatives, c’est aussi développer de <g>nouvelles façons de se parler à soi-même</g>. Cela peut passer par :",
+              "   • des phrases de soutien (comme on le ferait pour un ami) ;",
+              "   • des rappels de ce qui va bien, de ce qui est déjà accompli ;",
+              "   • des intentions positives, réalistes et ancrées dans le présent.",
+              "Petit à petit, ce changement de langage transforme non seulement notre manière de penser, mais aussi <g>notre posture face à la vie</g>."
+            ]
+          },
+          {
+            "title": "Un entraînement, pas une perfection",
+            "paragraphs": [
+              "Il ne s’agit pas d’avoir un mental toujours calme et lumineux. Il s’agit d’avoir des outils pour ne plus être enfermé par ses pensées. C’est un <g>apprentissage progressif</g>, fait d’essais, de retours en arrière, mais aussi de prises de conscience libératrices.",
+              "Reprendre le pouvoir sur ses pensées, c’est <g>reprendre le pouvoir sur son expérience</g>."
+            ]
+          },
+          {
+            "title": "Vous souhaitez apaiser votre mental et transformer votre discours intérieur ?",
+            "paragraphs": [
+              "<g>Je vous accompagne</g> pour mieux comprendre vos schémas mentaux, développer de nouveaux réflexes de pensée, et cultiver une relation plus saine avec vous-même."
+            ]
+          }
+        ]
+      }
+    ]
   },
   "contact_section": {
     "title" : "Un accompagnement personnalisé(e) en quelques clics ",

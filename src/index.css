@@ -3,13 +3,13 @@
 @theme {
 
     /* Custom theme colors */
-    --color-primary: #717171;
+    --color-primary: #1A1A1A;
     --color-secondary: #F4F0F0;
-    --color-accent: #A28956;
+    --color-accent: #8d6a24;
     --color-background: #f5f5f5;
     --color-text: #333333;
 
-    --text-accent: #717171;
+    --text-accent: #1A1A1A;
     
     /* Custom font sizes */
     --font-size-small: 0.875rem; /* 14px */
@@ -45,6 +45,29 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: #A28956; /* or use Tailwind overrides */
+  background-color: #8d6a24; /* or use Tailwind overrides */
   padding : 15px 15px;
+}
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A28956; /* Tailwind blue-500 */
+  border-radius: 9999px;
+  border: 2px solid #f1f1f1;
+}
+
+/* Optional: for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #A28956 #f1f1f1;
 }

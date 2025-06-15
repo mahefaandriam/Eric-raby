@@ -119,13 +119,13 @@ const Header = () => {
               {t('header.contacts')}
             </a>
             <div className="flex space-x-4">
-              <a href="#" className="text-black hover:text-accent transition-colors duration-300">
+              <a href="https://www.facebook.com/erabyrun" className="text-black hover:text-accent transition-colors duration-300">
                 <Facebook size={16} fill="#111" strokeWidth={0} />
               </a>
               <a href="#" className="text-black hover:text-accent transition-colors duration-300">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="text-black hover:text-accent transition-colors duration-300">
+              <a href="https://linkedin.com/in/eric-raby-2794948" className="text-black hover:text-accent transition-colors duration-300">
                 <Linkedin size={16} fill="#111" strokeWidth={0} />
               </a>
             </div>
@@ -224,13 +224,13 @@ const Header = () => {
             {t('header.contacts')}
           </a>
           <div className="flex space-x-4">
-              <a href="#" className="text-black hover:text-accent transition-colors duration-300">
+              <a href="https://www.facebook.com/erabyrun" className="text-black hover:text-accent transition-colors duration-300">
                 <Facebook size={16} fill="#111" strokeWidth={0} />
               </a>
               <a href="#" className="text-black hover:text-accent transition-colors duration-300">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="text-black hover:text-accent transition-colors duration-300">
+              <a href="https://linkedin.com/in/eric-raby-2794948" className="text-black hover:text-accent transition-colors duration-300">
                 <Linkedin size={16} fill="#111" strokeWidth={0} />
               </a>
           </div>

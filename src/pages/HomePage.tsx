@@ -380,13 +380,14 @@ const HomePage = () => {
                             <p>
                                 {t('about_guide_section.right_section.text.5')} 
                             </p><br />
-                            <p>
+                            <p> <Link to="https://mahefa.gumroad.com/l/aeyvgq" >
                                 {t('about_guide_section.right_section.text.6')} 
+                                </Link>
                             </p>
                         </div>
                     </div>                    
-                    <div className="relative place-self-center md:self-baseline text-xs text-center space-y-5 w-80 bg-red-800 h-auto px-6 py-4 my-10 bg-white">
-                        <h1 className="text-center font-bold text-2xl">63€</h1>
+                    <div className="relative place-self-center md:self-baseline text-xs text-center space-y-5 w-80 h-auto px-6 py-4 my-10 bg-white">
+                        <h1 className="text-center font-bold text-2xl">15€</h1>
                         <p>
                             {t('about_guide_section.left_section.text.1')}                             
                         </p>
@@ -406,8 +407,8 @@ const HomePage = () => {
                             transition={{ duration: 0.7, delay: 0.4 }}
                             >
                                 <Link
-                                    to={"/"}
-                                    className="inline-block bg-accent hover:bg-gold-700 text-white text-xs px-8 py-3 text-lg transition duration-300"
+                                    to={"https://mahefa.gumroad.com/l/aeyvgq"}
+                                    className="inline-block bg-accent hover:bg-gold-700 text-white text-xs px-8 py-3 transition duration-300"
                                 >                                   
                                     {t('about_guide_section.left_section.text.b_title')} 
                                 </Link>
@@ -453,76 +454,14 @@ const HomePage = () => {
                 <div className="relative py-20">
                     <h1 className="relative text-2xl font-bold mb-6 text-center text-white">{t('blog_answer_section.title')}</h1>
                     <h1 className="text-sm font-light mb-6 text-center text-white">{t('blog_answer_section.subtitle')}</h1>
-                    <div className="md:flex md:justify-center items-center mx-5 md:space-x-10 md:mx-65 pb-5 z-50">
-                        <div className="">
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.7, delay: 0.4 }}
-                                >
-                                <QAAccordion
-                                    question={t('blog_answer_section.1.question')}
-                                    answer={t('blog_answer_section.1.reponse')}
-                                />
-                            </motion.div>
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.7, delay: 0.6 }}
-                                >
-                                <QAAccordion
-                                    question={t('blog_answer_section.2.question')}
-                                    answer={t('blog_answer_section.2.reponse')}
-                                />
-                            </motion.div>
-                            
-                            <motion.div
+                    <div className="md:flex flex-col md:justify-center items-center mx-5 md:space-x-10 md:mx-30 pb-5">
+                            <motion.div className="w-full"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.7, delay: 0.8 }}
                                 >
-                                <QAAccordion
-                                    question={t('blog_answer_section.6.question')}
-                                    answer={t('blog_answer_section.6.reponse')}
-                                />
+                                <QAAccordion/>
                             </motion.div>
-                            
-                        </div>
-                        <div className="">
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.7, delay: 0.4 }}
-                                >
-                                <QAAccordion
-                                    question={t('blog_answer_section.4.question')}
-                                    answer={t('blog_answer_section.4.reponse')}
-                                />
-                            </motion.div>
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.7, delay: 0.6 }}
-                                >
-                                <QAAccordion
-                                    question={t('blog_answer_section.5.question')}
-                                    answer={t('blog_answer_section.5.reponse')}
-                                />
-                            </motion.div>
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.7, delay: 0.8 }}
-                                >
-                                <QAAccordion
-                                    question={t('blog_answer_section.3.question')}
-                                    answer={t('blog_answer_section.3.reponse')}
-                                />
-                            </motion.div>
-                        </div>
                     </div>
                 </div>            
             </div>

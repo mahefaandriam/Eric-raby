@@ -50,13 +50,13 @@ const Footer = () => {
                 <div className="relative  flex justify-center  col-span-1 bg-white">
                     <div className="place-self-center mx-5">
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-300 text-primary hover:text-accent transition-colors duration-300">
+                            <a href="https://www.facebook.com/erabyrun" className="text-gray-300 text-primary hover:text-accent transition-colors duration-300">
                             <Facebook size={20} />
                             </a>
                             <a href="#" className="text-gray-300 text-primary hover:text-accent transition-colors duration-300">
                             <Instagram size={20} />
                             </a>
-                            <a href="#" className="text-gray-300 text-primary hover:text-accent transition-colors duration-300">
+                            <a href="https://linkedin.com/in/eric-raby-2794948" className="text-gray-300 text-primary hover:text-accent transition-colors duration-300">
                             <Linkedin size={20} />
                             </a>
                         </div>
