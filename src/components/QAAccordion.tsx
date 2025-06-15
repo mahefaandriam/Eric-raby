@@ -76,8 +76,8 @@ export default function QAAccordion() {
                           i18nKey={`blog_answer_section.posts.${p_index}.reponses.${r_index}.paragraphs.${pr_index}`}
                           components={{
                             g: <strong className="font-bold text-accent" />,
-                            i: <span className="flex ml-3" />,
-                            l: <span className="font-extrabold" />
+                            l: <span className="font-extrabold" />,
+                            t: <span className="italic" />
                           }}
                         />
                       </div>
