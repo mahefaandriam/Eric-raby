@@ -39,12 +39,17 @@ export default function QAAccordion() {
         <div key={p_index} className="border border-gray-300  overflow-hidden bg-white shadow mb-4">
           <button
             onClick={() => handleOpen(p_index)}
-            className="w-full flex items-center justify-between px-4 py-3 text-left text-gray-800 text-xs font-thin cursor-pointer"
-          >
-            <span className={`text-center ${openedBlog === p_index ? 'font-bold text-2xl' : 'font-normal text-sm'}`}>{post.question}</span>
-            <ChevronDown
-              className={`w-5 h-5 transition-transform duration-300 ${openedBlog === p_index ? 'rotate-180' : ''}`}
-            />
+            className="w-full flex px-4 text-left text-gray-800 text-xs font-thin cursor-pointer"
+          > 
+              <div className='flex items-center justify-center py-2 w-full'>
+                <div>
+                  <span className={`text-center font-bold  ${openedBlog === p_index ? 'text-xl' : 'text-sm'}`}>{post.question}</span>
+                  <h4 className="flex text-xs font-thin "><p className='italic'>&nbsp; langue:</p>français</h4>
+                </div>
+              </div>
+              <ChevronDown
+                className={`w-5 h-5 transition-transform duration-300 justify-self-end ${openedBlog === p_index ? 'rotate-180' : ''}`}
+              />
           </button>
           <div
             className={`px-10 md:px-30 pb-4 text-gray-600 text-xs font-thin transition-all duration-300 ease-in-out ${
