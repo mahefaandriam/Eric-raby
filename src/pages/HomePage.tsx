@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import { Quote} from 'lucide-react';
+import Header from "../components/Header";
 
 
 const overlay = true;
@@ -20,6 +21,7 @@ const HomePage = () => {
     const { t } = useTranslation();
     return (
         <div>
+            <Header />
             {/* Section 1 */}
             <div id="home">
                 <Hero 
