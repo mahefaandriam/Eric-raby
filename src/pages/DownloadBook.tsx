@@ -57,7 +57,7 @@ const DownloadBook: React.FC = () => {
                     {/* Logo */}
                     <div className="flex justify-center mb-4">
                         <img 
-                            src="public/qwam.png" 
+                            src="/qwam.png" 
                             alt="Book Logo"
                             className="h-32 w-auto"
                             style={{
