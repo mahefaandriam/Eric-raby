@@ -1,27 +1,36 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+declare global {
+    interface Window {
+        paypal?: any;
+    }
+}
+
 const DownloadBook: React.FC = () => {
     const navigate = useNavigate();
 
+       // Load PayPal SDK script
     useEffect(() => {
-        // Initialisation PayPal
-        const paypalScript = document.createElement('script');
-        paypalScript.src = 'https://www.paypal.com/sdk/js?client-id=VOTRE_CLIENT_ID';
-        paypalScript.async = true;
-        document.body.appendChild(paypalScript);
+        // Check if PayPal script is already loaded
+        if (document.getElementById('paypal-sdk')) return;
 
-        // Configuration de l'actualisation unique après 5 secondes
-        const refreshTimer = setTimeout(() => {
-            window.location.reload();
-        }, 5000); // 5000 ms = 5 secondes
-
-        // Nettoyage
-        return () => {
-            document.body.removeChild(paypalScript);
-            clearTimeout(refreshTimer);
+        const script = document.createElement('script');
+        script.id = 'paypal-sdk';
+        script.src = 'https://www.paypal.com/sdk/js?client-id=AU-uYDfRWow3Yko0t7PTQTLeGaxO-_IG-k9X6PFzNf8miDrMCM9AmPFLlJf5Oz2CGYmmpMO_yNG8YRjs&currency=USD';
+        script.async = true;
+        script.onload = () => {
+            if (window.paypal && document.getElementById('paypal-button-container')) {
+                window.paypal.Buttons().render('#paypal-button-container');
+            }
         };
-    }, []); // Le tableau vide signifie que cela s'exécute une fois au montage
+        document.body.appendChild(script);
+
+        return () => {
+            // Optional: remove script on unmount
+            script.remove();
+        };
+    }, []);
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white">
