@@ -10,27 +10,54 @@ declare global {
 const DownloadBook: React.FC = () => {
     const navigate = useNavigate();
 
-       // Load PayPal SDK script
     useEffect(() => {
-        // Check if PayPal script is already loaded
-        if (document.getElementById('paypal-sdk')) return;
+        // Load PayPal SDK if not already loaded
+        if (!window.paypal) {
+            const script = document.createElement('script');
+            script.src = 'https://www.paypal.com/sdk/js?client-id=AU-uYDfRWow3Yko0t7PTQTLeGaxO-_IG-k9X6PFzNf8miDrMCM9AmPFLlJf5Oz2CGYmmpMO_yNG8YRjs&currency=USD';
+            script.async = true;
+            script.onload = () => renderPayPalButton();
+            document.body.appendChild(script);
+        } else {
+            renderPayPalButton();
+        }
 
-        const script = document.createElement('script');
-        script.id = 'paypal-sdk';
-        script.src = 'https://www.paypal.com/sdk/js?client-id=AU-uYDfRWow3Yko0t7PTQTLeGaxO-_IG-k9X6PFzNf8miDrMCM9AmPFLlJf5Oz2CGYmmpMO_yNG8YRjs&currency=USD';
-        script.async = true;
-        script.onload = () => {
+        function renderPayPalButton() {
             if (window.paypal && document.getElementById('paypal-button-container')) {
-                window.paypal.Buttons().render('#paypal-button-container');
+                window.paypal.Buttons({
+                    style: {
+                        layout: 'vertical',
+                        color: 'gold',
+                        shape: 'rect',
+                        label: 'paypal'
+                    },
+                    createOrder: (data: any, actions: any) => {
+                        return actions.order.create({
+                            purchase_units: [{
+                                amount: {
+                                    value: '14.90',
+                                    currency_code: 'USD'
+                                }
+                            }]
+                        });
+                    },
+                    onApprove: (data: any, actions: any) => {
+                        return actions.order.capture().then(() => {
+                            // Redirect to download page or show download link
+                            window.location.href = '/download-link'; // Change as needed
+                        });
+                    }
+                }).render('#paypal-button-container');
             }
-        };
-        document.body.appendChild(script);
+        }
 
+        // Cleanup PayPal button on unmount
         return () => {
-            // Optional: remove script on unmount
-            script.remove();
+            const container = document.getElementById('paypal-button-container');
+            if (container) container.innerHTML = '';
         };
     }, []);
+  
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white">
