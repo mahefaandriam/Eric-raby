@@ -380,7 +380,7 @@ const HomePage = () => {
                             <p>
                                 {t('about_guide_section.right_section.text.5')} 
                             </p><br />
-                            <p> <Link to="https://mahefa.gumroad.com/l/aeyvgq" >
+                            <p> <Link to="/downlad-book" >
                                 {t('about_guide_section.right_section.text.6')} 
                                 </Link>
                             </p>
@@ -407,7 +407,7 @@ const HomePage = () => {
                             transition={{ duration: 0.7, delay: 0.4 }}
                             >
                                 <Link
-                                    to={"https://mahefa.gumroad.com/l/aeyvgq"}
+                                    to={"/downlad-book"}
                                     className="inline-block bg-accent hover:bg-gold-700 text-white text-xs px-8 py-3 transition duration-300"
                                 >                                   
                                     {t('about_guide_section.left_section.text.b_title')} 

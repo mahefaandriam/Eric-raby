@@ -12,5 +12,31 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!--
+      Script to load PayPal SDK and render the button
+      Ensure that the client-id is replaced with your actual PayPal client ID.
+      The currency is set to USD, but you can change it as needed.
+    -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AU-uYDfRWow3Yko0t7PTQTLeGaxO-_IG-k9X6PFzNf8miDrMCM9AmPFLlJf5Oz2CGYmmpMO_yNG8YRjs&currency=USD"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.paypal) {
+          paypal.Buttons({
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: [{
+                  amount: { value: '9.99' }
+                }]
+              });
+            },
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function () {
+                window.location.href = "/thank-you";
+              });
+            }        
+          }).render('#paypal-button-container');
+        }
+      });
+    </script>
   </body>
 </html>
