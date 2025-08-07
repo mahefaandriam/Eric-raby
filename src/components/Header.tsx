@@ -103,19 +103,19 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-5">
-            <a href="#home" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
+            <a href="/#home" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
               {t('header.home')}
             </a>
-            <a href="#about" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
+            <a href="/#about" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
               {t('header.about')}
             </a>
-            <a href="#interventions" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
+            <a href="/#interventions" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
               {t('header.interventions')}
             </a>
-            <a href="#experiences" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
+            <a href="/#experiences" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
               {t('header.experiences')} 
             </a>
-            <a href="#contact" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
+            <a href="/#contact" className="hover:text-black/25 text-black/50 text-xs font-thin transition duration-200">
               {t('header.contacts')}
             </a>
             <div className="flex space-x-4">
@@ -189,35 +189,35 @@ const Header = () => {
         </div>
         <nav className="flex flex-col items-left mx-8  space-y-6 text-black">
           <a
-            href="#home"
+            href="/#home"
             onClick={closeMenu}
             className="hover:text-black/25 text-xs text-black/80 transition duration-200"
           >
             {t('header.home')}
           </a>
           <a
-            href="#about"
+            href="/#about"
             onClick={closeMenu}
             className="hover:text-black/25 text-xs text-black/80 transition duration-200"
           >
             {t('header.about')}
           </a>
           <a
-            href="#interventions"
+            href="/#interventions"
             onClick={closeMenu}
             className="hover:text-black/25 text-xs text-black/80 transition duration-200"
           >
             {t('header.interventions')}
           </a>
           <a
-            href="#experiences"
+            href="/#experiences"
             onClick={closeMenu}
             className="hover:text-black/25 text-xs  text-black/80 transition duration-200"
           >
             {t('header.experiences')}
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             onClick={closeMenu}
             className="hover:text-black/25 text-xs text-black/80 transition duration-200"
           >

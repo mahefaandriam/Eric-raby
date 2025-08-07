@@ -9,31 +9,31 @@ const Footer = () => {
             <div className="grid grid-cols-2">
                 <div className="relative flex justify-center col-span-2 bg-white h-20 py-3">
                     <a
-                        href="#home"
+                        href="/#home"
                         className="text-black/50 mx-5 font-medium text-xs transition duration-300"
                     >
                         {t('footer_section.home')}
                     </a>
                     <a
-                        href="#about"
+                        href="/#about"
                         className="text-black/50 mx-5 font-medium text-xs transition duration-300"
                     >
                         {t('footer_section.about')}
                     </a>
                     <a
-                        href="#interventions"
+                        href="/#interventions"
                         className="text-black/50 mx-5 font-medium text-xs transition duration-300"
                     >
                         {t('footer_section.interventions')}
                     </a>
                     <a
-                        href="#contact"
+                        href="/#contact"
                         className="text-black/50 mx-5 font-medium text-xs transition duration-300"
                     >                        
                         {t('footer_section.contact')}
                     </a>
                     <a
-                        href="#faq"
+                        href="/#faq"
                         className="text-black/50 mx-5 font-medium text-xs transition duration-300"
                     >                        
                         {t('footer_section.faq')}
