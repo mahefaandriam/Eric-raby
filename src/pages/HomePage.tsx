@@ -387,7 +387,10 @@ const HomePage = () => {
                         </div>
                     </div>                    
                     <div className="relative place-self-center md:self-baseline text-xs text-center space-y-5 w-80 h-auto px-6 py-4 my-10 bg-white">
-                        <h1 className="text-center font-bold text-2xl">15€</h1>
+                    <div className="flex justify-center items-center gap-2">
+            <span className="text-red-500 line-through text-xl">35€</span>
+            <br /><h1 className="text-center font-bold text-2xl text-green-600">25€</h1>
+        </div>
                         <p>
                             {t('about_guide_section.left_section.text.1')}                             
                         </p>
