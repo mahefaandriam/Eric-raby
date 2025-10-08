@@ -151,7 +151,7 @@ const HomePage = () => {
                         </motion.p>                        
                     </div>
 
-                    <div className="w-screen px-20 md:px-40 ld:px-60">
+                    <div className="grid grid-cols-1 px-20 md:px-40 ld:px-60">
                         <CommentSwiper2 />
                     </div>
 
