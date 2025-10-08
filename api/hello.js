@@ -67,7 +67,7 @@ export default async function handler(req, res) {
   try {
     const result = await resend.emails.send({
       from: 'connecttalentdev@eric-raby.com', // Use a verified domain or resendmail.com
-      to: ['eric.raby@hotmail.fr'],                 // Your email to receive the form
+      to: ['fenoandriams@gmail.com'],                 // Your email to receive the form
       subject: `📩 Nouveau message de ${name}`,
       html: htmlContent,
     });
