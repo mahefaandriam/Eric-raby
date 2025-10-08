@@ -4,5 +4,10 @@
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
-  ]
+  ],
+  "functions": {
+    "api/send-email.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
 }
