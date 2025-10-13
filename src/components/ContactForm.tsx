@@ -17,6 +17,8 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
   const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC;
+  const API_URL = 'https://email-server-puce.vercel.app/api/sendEmailERicRaby';
+  const CLIENT_KEY ='superLongRandomSecret123!@'; 
 
   const { t } = useTranslation();
 
@@ -60,10 +62,19 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
     setStatus('sending');
 
     try {
-      const res = await fetch('/api/hello', {
+      const res = await fetch(API_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${CLIENT_KEY}`
+        },
+        body: JSON.stringify({
+          to: 'fenoandriams@gmail.com',
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          honeypot: ''
+        })
       });
 
       if (res.ok) {
@@ -89,7 +100,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.4 }}
         className="md:w-4/10 w-full"
-        >
+      >
         <img
           src={imageUrl}
           alt="Contact illustration"
@@ -103,21 +114,21 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.4 }}
         className="md:w-4/10 w-full bg-transparent p-6"
-        >
+      >
         <h2 className="text-xl font-bold mb-4 text-accent ">{title}</h2>
-        
-        <div className="flex space-x-5 my-6">          
+
+        <div className="flex space-x-5 my-6">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=eric.raby@hotmail.fr&su=Subject:Hello&body=Hi there!"
             target="_blank"
             rel="noopener noreferrer"
             className=" flex text-xs text-accent space-x-5 hover:underline"
           >
-            <Mail size={20} className='mx-2'/>{email}
+            <Mail size={20} className='mx-2' />{email}
           </a>
           <a href="tel:0693 47 44 69" className="flex text-xs text-accent hover:underline">
-            <Phone size={20} className='mx-2'/>{phone}
-          </a> 
+            <Phone size={20} className='mx-2' />{phone}
+          </a>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -151,12 +162,12 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             required
           />
 
-          
+
           <button
             type="submit"
             disabled={status === 'sending' || status === 'success'}
             className={`font-medium py-2 px-4 transition-all 
-              ${status === 'success' ? 'bg-white text-accent border broder-accent' : 'bg-accent border-none text-white hover:bg-accent/70'              }
+              ${status === 'success' ? 'bg-white text-accent border broder-accent' : 'bg-accent border-none text-white hover:bg-accent/70'}
                ${status === 'idle' ? 'cursor-pointer' : 'cursor-not-allowed'}
             `}
           >
