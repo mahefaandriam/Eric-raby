@@ -105,7 +105,6 @@ export default function CommentSwiper({ addNavigation }: CommentSwiperProps) {
                     alt={c.name}
                     className="relative place-self-center -top-8 w-auto h-18 object-cover z-30"
                   />
-
                   <div className="relative -top-5">
                     <p className="font-bold text-sm text-gray-900 dark:text-white">{c.name}</p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">{c.job}</p>
