@@ -3,7 +3,6 @@ import { Mail, Phone, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
-import emailjs from '@emailjs/browser';
 
 type ContactSectionProps = {
   imageUrl: string;
@@ -14,8 +13,8 @@ type ContactSectionProps = {
 
 export default function ContactForm({ imageUrl, title, email, phone }: ContactSectionProps) {
 
-  const API_URL = "https://email-server-puce.vercel.app/api/sendEmailERicRaby";
-  const CLIENT_KEY = "superLongRandomSecret123!@"; 
+  const API_URL = import.meta.env.VITE_API_URL;
+  const CLIENT_KEY = import.meta.env.VITE_CLIENT_KEY; 
 
   const { t } = useTranslation();
 
