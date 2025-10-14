@@ -18,7 +18,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
   const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC;
   const API_URL = 'https://email-server-puce.vercel.app/api/sendEmailERicRaby';
-  const CLIENT_KEY ='superLongRandomSecret123!@'; 
+  const CLIENT_KEY = 'superLongRandomSecret123!@';
 
   const { t } = useTranslation();
 
@@ -91,6 +91,28 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
     }
   };
 
+  const sendMessage = async () => {
+    try {
+      const response = await fetch("https://email-server-puce.vercel.app/api/sendEmailERicRaby", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer superLongRandomSecret123!@`,
+        },
+        body: JSON.stringify({
+          to: "fenoandriams@gmail.com",
+          subject: "Test CORS sécurisé",
+          message: "Bonjour, test réussi ✅",
+        }),
+      });
+
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.error("Erreur d’envoi:", error);
+    }
+  };
+
 
   return (
     <section className="flex flex-col md:flex-row items-stretch justify-center max-w-6xl mx-auto text-xs p-6 gap-10">
@@ -131,7 +153,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           </a>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={sendMessage} className="space-y-4">
           <input
             type="text"
             name="name"
