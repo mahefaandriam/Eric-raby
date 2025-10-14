@@ -69,11 +69,10 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           'Authorization': `Bearer ${CLIENT_KEY}`
         },
         body: JSON.stringify({
-          to: 'fenoandriams@gmail.com',
           name: form.name,
           email: form.email,
           message: form.message,
-          otherMessage: ''
+          otherMessage: form.otherMessage
         })
       });
 
