@@ -17,7 +17,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
   const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC;
-  const API_URL = 'http://localhost:5000/api/sendEmailERicRaby';
+  const API_URL = 'https://email-server-puce.vercel.app/api/sendEmailERicRaby';
   const CLIENT_KEY ='superLongRandomSecret123!@'; 
 
   const { t } = useTranslation();
