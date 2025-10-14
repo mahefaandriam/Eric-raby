@@ -22,7 +22,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
 
   const { t } = useTranslation();
 
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', message: '', otherMessage: '' });
 
   const [status, setStatus] = useState('idle');
 
@@ -73,14 +73,14 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           name: form.name,
           email: form.email,
           message: form.message,
-          honeypot: ''
+          otherMessage: ''
         })
       });
 
       if (res.ok) {
         console.log(res.formData);
         setStatus('success');
-        setForm({ name: '', email: '', message: '' });
+        setForm({ name: '', email: '', message: '', otherMessage: '' });
         setTimeout(() => setStatus('idle'), 3000);
       } else {
         throw new Error();
@@ -162,6 +162,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
             required
           />
 
+          <input type="text" name="website" style={{ display: 'none' }} value={form.otherMessage} onChange={handleChange} />
 
           <button
             type="submit"
