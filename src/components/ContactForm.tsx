@@ -60,38 +60,6 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setStatus('sending');
-
-    try {
-      const res = await fetch(API_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${CLIENT_KEY}`
-        },
-        body: JSON.stringify({
-          to: 'fenoandriams@gmail.com',
-          name: form.name,
-          email: form.email,
-          message: form.message,
-          honeypot: ''
-        })
-      });
-
-      if (res.ok) {
-        console.log(res.formData);
-        setStatus('success');
-        setForm({ name: '', email: '', message: '' });
-        setTimeout(() => setStatus('idle'), 3000);
-      } else {
-        throw new Error();
-      }
-    } catch (err) {
-      setStatus('error');
-      console.log('error: ' + err);
-    }
-  };
-
-  const sendMessage = async () => {
     try {
       const response = await fetch("https://email-server-puce.vercel.app/api/sendEmailERicRaby", {
         method: "POST",
@@ -153,7 +121,7 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
           </a>
         </div>
 
-        <form onSubmit={sendMessage} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
             name="name"
