@@ -14,8 +14,8 @@ type ContactSectionProps = {
 
 export default function ContactForm({ imageUrl, title, email, phone }: ContactSectionProps) {
 
-  const API_URL = import.meta.env.VITE_API_URL;
-  const CLIENT_KEY = import.meta.env.VITE_CLIENT_KEY; 
+  const API_URL = "https://email-server-puce.vercel.app/api/sendEmailERicRaby";
+  const CLIENT_KEY = "superLongRandomSecret123!@"; 
 
   const { t } = useTranslation();
 
