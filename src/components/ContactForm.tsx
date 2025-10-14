@@ -17,8 +17,8 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
   const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC;
-  const API_URL = 'https://email-server-puce.vercel.app/api/sendEmailERicRaby';
-  const CLIENT_KEY = 'superLongRandomSecret123!@';
+  const API_URL = 'http://localhost:5000/api/sendEmailERicRaby';
+  const CLIENT_KEY ='superLongRandomSecret123!@'; 
 
   const { t } = useTranslation();
 
@@ -60,24 +60,34 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setStatus('sending');
+
     try {
-      const response = await fetch("https://email-server-puce.vercel.app/api/sendEmailERicRaby", {
-        method: "POST",
+      const res = await fetch(API_URL, {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer superLongRandomSecret123!@`,
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${CLIENT_KEY}`
         },
         body: JSON.stringify({
-          to: "fenoandriams@gmail.com",
-          subject: "Test CORS sécurisé",
-          message: "Bonjour, test réussi ✅",
-        }),
+          to: 'fenoandriams@gmail.com',
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          honeypot: ''
+        })
       });
 
-      const result = await response.json();
-      console.log(result);
-    } catch (error) {
-      console.error("Erreur d’envoi:", error);
+      if (res.ok) {
+        console.log(res.formData);
+        setStatus('success');
+        setForm({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus('idle'), 3000);
+      } else {
+        throw new Error();
+      }
+    } catch (err) {
+      setStatus('error');
+      console.log('error: ' + err);
     }
   };
 
