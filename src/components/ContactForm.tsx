@@ -14,11 +14,8 @@ type ContactSectionProps = {
 
 export default function ContactForm({ imageUrl, title, email, phone }: ContactSectionProps) {
 
-  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC;
-  const API_URL = 'https://email-server-puce.vercel.app/api/sendEmailERicRaby';
-  const CLIENT_KEY ='superLongRandomSecret123!@'; 
+  const API_URL = import.meta.env.VITE_API_URL;
+  const CLIENT_KEY = import.meta.env.VITE_CLIENT_KEY; 
 
   const { t } = useTranslation();
 
@@ -33,30 +30,6 @@ export default function ContactForm({ imageUrl, title, email, phone }: ContactSe
     });
   };
 
-  /*const handleSubmit = async (e: { preventDefault: () => void; }) => {
-      e.preventDefault();
-      setStatus('sending');
-  
-      try {
-        await emailjs.send(
-          serviceID,
-          templateID,
-          {
-            user_name: form.name,
-            user_email: form.email,
-            message: form.message,
-          },
-          publicKey
-        );
-  
-        setStatus('success');
-        setForm({ name: '', email: '', message: '' });
-      } catch (error) {
-        console.error('Email send error:', error);
-        setStatus('error');
-      }
-    };
-    */
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setStatus('sending');
